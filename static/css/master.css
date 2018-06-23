@@ -1,3 +1,5 @@
+@primary-blue: rgb(60,153,252);
+
 .admin-section {
     border-left: 4px solid #a7cee4;
     padding: 0px 10px 10px 10px;
@@ -44,7 +46,7 @@ table.readinglog-stats tr:nth-child(even) {
 }
 
 .carousel .slick-prev:before, .carousel .slick-next:before {
-    color: #3c99fc;
+    color: @primary-blue;
     font-size: 35px;
 }
 
@@ -100,7 +102,7 @@ table.readinglog-stats tr:nth-child(even) {
 }
 
 .carousel .book .book-cta {
-    background: #3c99fc;
+    background: @primary-blue;
     border-radius: 3px;
     font-family: "Lucida Grande", Verdana, Geneva, Helvetica, Arial, sans-serif;
     width: 130px;
@@ -3109,7 +3111,7 @@ a.cta-btn  {
 }
 
 .borrow_available {
-    background-color: #3b99fc;
+    background-color: @primary-blue;
 }
 
 .borrow_unavailable {
@@ -3517,7 +3519,7 @@ select#select-id {
 .borrow-btn, .read-btn, .wait-btn, .unwait-btn {
     margin: 1px auto;
     color: white;
-    background: #3b99fc;
+    background: @primary-blue;
     border-radius: 5px;
     padding: 7px 20px;
     cursor: pointer;
@@ -6069,8 +6071,6 @@ ul#myreads-paginator li.selected:hover {
 .reading-lists-title {
     padding: 10px;
 }
-
-@primary-blue: #3c99fc;
 
 /* This button should be used for now on */
 .btn {
