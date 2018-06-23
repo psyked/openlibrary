@@ -1,4 +1,5 @@
 @primary-blue: rgb(60,153,252);
+@light-yellow: rgb(255,253,205);
 
 .admin-section {
     border-left: 4px solid #a7cee4;
@@ -231,7 +232,7 @@ button.larger{font-size:18px!important;}
 .attn,.neg{color:#e44028!important;}
 .pos{color:#35672e!important;}
 .black{color:#000!important;}
-.highlight {background-color: #fffdcd;}
+.highlight {background-color: @light-yellow;}
 .orange {color: #ffa337!important;}
 .brown {color: #615132!important;}
 .teal {color: #00636a!important;}
@@ -239,7 +240,7 @@ button.larger{font-size:18px!important;}
 .lightgreen {color: #748d36!important;}
 .blue {color: #036daa!important;}
 .red {color: #e44028!important;}
-.yellow {color: #fffdcd!important;}
+.yellow {color: @light-yellow!important;}
 .lightgrey,.lightgray {color:#999!important;}
 .gray, .grey {color:#666!important;}
 .darkgray, .darkgrey {color:#333!important;}
@@ -358,7 +359,7 @@ p.alert {
     font-family: "Lucida Grande",Verdana,Geneva,Helvetica,sans-serif;
     font-size: 0.875em;
     color: #615132;
-    background-color: #fffdcd;
+    background-color: @light-yellow;
     background-position: 10px 50%;
     background-repeat: no-repeat;
     margin: 10px auto 0;
@@ -1277,7 +1278,7 @@ div.flash-messages {
 }
 div.flash-messages span {
     display: block;
-    background-color: #fffdcd;
+    background-color: @light-yellow;
     background-position: 10px 50%;
     background-repeat: no-repeat;
     padding: 15px 52px;
@@ -1288,15 +1289,15 @@ div.flash-messages span {background-image: url("/images/icons/icon_check.png");}
 div.note {
     font-size: 1.0em;
     font-family: "Lucida Grande", Verdana, Geneva, Helvetica, Arial, sans-serif;
-    background-color: #fffdcd;
+    background-color: @light-yellow;
     margin: 0 auto;
     padding: 10px;
     text-align: left;
     border: 1px solid #e2de8b;
 }
-div#noLogin {margin-top:10px;background:#fffdcd url("/images/icons/icon_info.png") no-repeat 10px 50%;padding:10px 10px 10px 44px;}
+div#noLogin {margin-top:10px;background:@light-yellow url("/images/icons/icon_info.png") no-repeat 10px 50%;padding:10px 10px 10px 44px;}
 .flash-messages .bookadded span {
-    background: #fffdcd url("/images/icons/icon_check.png") no-repeat 40px 40px;
+    background: @light-yellow url("/images/icons/icon_check.png") no-repeat 40px 40px;
     padding: 40px 40px 40px 80px;
     font-family: "Georgia", "Times New Roman", serif;
     position: relative;
@@ -1341,7 +1342,7 @@ div#noLogin {margin-top:10px;background:#fffdcd url("/images/icons/icon_info.png
 
 
 /* ALERT MESSAGE */
-body#user div.message {float:left;clear:both;width:100%;margin-bottom:15px;background:#fffdcd;}
+body#user div.message {float:left;clear:both;width:100%;margin-bottom:15px;background:@light-yellow;}
 body#user div.message p {font-family: "Lucida Grande","Arial",sans-serif;}
 div#preMerge{min-height:32px;padding:10px 10px 10px 52px;background:transparent url("/images/icons/icon_merge.png") no-repeat 10px 10px;}
 div#postMerge{min-height:32px;padding:10px 10px 10px 52px;background:transparent url("/images/icons/icon_check.png") no-repeat 10px 10px;}
@@ -1401,7 +1402,7 @@ div.formDivider {float:left;width:25px;min-height:100px;}
 
 .formBackLeft {float:left;width:670px;}
 .formBackRight {float:left;width:120px;padding:10px 10px 15px 30px;text-align:center;}
-#message {font-family: "Lucida Grande", "Trebuchet MS", Geneva, Helvetica, sans-serif;font-size:14px;background-color:#fffdcd;padding:15px;}
+#message {font-family: "Lucida Grande", "Trebuchet MS", Geneva, Helvetica, sans-serif;font-size:14px;background-color:@light-yellow;padding:15px;}
 
 
 /* ACCOUNT FORMS */
@@ -1509,7 +1510,7 @@ label.invalid {
     padding: 5px 0 0 29px!important;
 }
 input.highlight {
-    background-color: #fffdcd;
+    background-color: @light-yellow;
 }
 form#register .formElement,
 form#register .label,
@@ -1777,7 +1778,7 @@ body#edit table.code td {
 body#edit div#databar {
     padding: 10px;
     margin: 20px 20px 0;
-    background-color: #fffdcd;
+    background-color: @light-yellow;
 }
 body#edit div#databar a {
     font-size: 0.75em;
@@ -2621,7 +2622,7 @@ div.contentRight {
 }
 
 div#contentMsg {
-    background-color: #fffdcd;
+    background-color: @light-yellow;
     padding: 15px 20px;
     display: none;
 }
@@ -3164,7 +3165,7 @@ div#searchResults .SRPCoverBlank .innerBorder {
 }
 div#searchResults .SRPCoverBlank a {text-decoration: none;}
 
-#pullOut {float:right;position:relative;padding:10px;background:#fffdcd;}
+#pullOut {float:right;position:relative;padding:10px;background:@light-yellow;}
 #pullOut .label {position:absolute;width:41px;height:22px;background-image:url("/images/flag_new.png");top:-10px;left:-17px;}
 #pullOut p {font-size:.625em;color:#666;margin:0;padding:0;}
 #pullOut a {font-size:1.4em;font-weight:700;display:block;}
@@ -3345,7 +3346,7 @@ div.workCover {float:right;width:270px;min-height:10px;}
 div.workAbout {float:left;clear:left;width:610px;padding-right:38px;}
 div.workPadding {margin-top:10px;margin-bottom:30px;margin-left: 20px;}
 div.workPadding p {margin-top: 0;}
-div.workHelp {float:left;width:553px;background-color:#ffffce;padding:20px;font-size:14px;margin-bottom:15px;}
+div.workHelp {float:left;width:553px;background-color:@light-yellow;padding:20px;font-size:14px;margin-bottom:15px;}
 div.work {font-family: "Lucida Grande", Verdana, Geneva, Helvetica, Arial, sans-serif;}
 div.work span.work, div.work span.author {font-family: "Lucida Grande", Verdana, Geneva, Helvetica, Arial, sans-serif;color:#615132;font-size:1.125em;}
 div.work span.work {font-weight: 700;}
@@ -3709,7 +3710,7 @@ div#historyPosition {
     position: relative;
     width: 880px;
     height: 85px;
-    background-color: #fffdcd;
+    background-color: @light-yellow;
     border: 5px solid #615132;
     border-bottom: 1px solid #d3ccb0;
     -webkit-border-top-right-radius: 15px;
@@ -4501,7 +4502,7 @@ body#form .trash {
     width: 560px;
     height: 90px;
     overflow: hidden;
-    background-color: #fffdcd;
+    background-color: @light-yellow;
     float: left;
     margin: 0 10px;
     border-radius: 8px;
@@ -5022,7 +5023,7 @@ div.merge div.header div {
     padding: 5px;
 }
 div.merge div.master {
-    background-color: #fffdcd!important;
+    background-color: @light-yellow!important;
 }
 div.merge div.data {
     padding: 0 5px;
@@ -5086,7 +5087,7 @@ body#plain #contentBody, body#plain #contentHead {width:690px;padding:0 134px;ma
 body#plain div.contentOnethird {width: 210px;}
 body#plain div.contentSpacer {width:30px;height:15px;}
 body#plain div.nav {margin: 50px 0 50px;font-size:14px;}
-body#plain div.message {padding:25px 25px 25px 55px;margin-bottom:50px;background:#fffdcd url("/images/icons/icon_lock-msg.png") no-repeat 15px 50%;}
+body#plain div.message {padding:25px 25px 25px 55px;margin-bottom:50px;background:@light-yellow url("/images/icons/icon_lock-msg.png") no-repeat 15px 50%;}
 body#plain div.message h2 {font-weight:normal;font-size:18px;color:#000;margin:0;padding:0;}
 body#plain div.message p {font-size:0.75em;padding:0;margin:0;}
 body#plain ul.link {margin-bottom:50px;}
@@ -5096,9 +5097,9 @@ body#plain #faq p {font-size:0.75em;color:#333;}
 body#plain p.help {font-size:14px;}
 
 /* BORROWING */
-body#plain div.alert {background:#fffdcd url("/images/icons/icon_alert-gold.png") no-repeat 15px 50%!important;margin-bottom:10px;margin-top:20px;}
-body#plain div.stop {background:#fffdcd url("/images/icons/icon_stop.png") no-repeat 15px 50%!important;margin-bottom:45px;margin-top:20px;}
-body#plain div.info {background:#fffdcd url("/images/icons/icon_info.png") no-repeat 17px 50%!important;margin-bottom:45px;margin-top:20px;}
+body#plain div.alert {background:@light-yellow url("/images/icons/icon_alert-gold.png") no-repeat 15px 50%!important;margin-bottom:10px;margin-top:20px;}
+body#plain div.stop {background:@light-yellow url("/images/icons/icon_stop.png") no-repeat 15px 50%!important;margin-bottom:45px;margin-top:20px;}
+body#plain div.info {background:@light-yellow url("/images/icons/icon_info.png") no-repeat 17px 50%!important;margin-bottom:45px;margin-top:20px;}
 body#plain h1 {font-size:1.5em;margin:0 0 15px 0;}
 body#plain div.navBorrow {margin: 50px 0 10px;font-size:0.75em;}
 body#plain .panel {background-color: #fff;border:1px solid #d3ccb0; padding:30px 20px;margin-bottom: 20px;}
