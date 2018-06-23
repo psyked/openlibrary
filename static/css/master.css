@@ -1,5 +1,6 @@
 @primary-blue: rgb(60,153,252);
 @link-blue: rgb(3,109,170);
+@mid-blue: rgb(52,152,219);
 @light-yellow: rgb(255,253,205);
 
 .admin-section {
@@ -2438,11 +2439,11 @@ a.generic-button {
     width: 100%;
     border: none;
     outline: none;
-    background: #3498db;
-    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
-    background-image: -o-linear-gradient(top, #3498db, #2980b9);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#3498db), to(#2980b9));
-    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    background: @mid-blue;
+    background-image: -webkit-linear-gradient(top, @mid-blue, #2980b9);
+    background-image: -o-linear-gradient(top, @mid-blue, #2980b9);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(@mid-blue), to(#2980b9));
+    background-image: linear-gradient(to bottom, @mid-blue, #2980b9);
     border-radius: 5px;
     font-family: Arial;
     color: #ffffff;
@@ -2453,10 +2454,10 @@ a.generic-button {
 
 .modal-form button:hover {
     background: #3cb0fd;
-    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#3cb0fd), to(#3498db));
-    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    background-image: -webkit-linear-gradient(top, #3cb0fd, @mid-blue);
+    background-image: -o-linear-gradient(top, #3cb0fd, @mid-blue);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#3cb0fd), to(@mid-blue));
+    background-image: linear-gradient(to bottom, #3cb0fd, @mid-blue);
     text-decoration: none;
     cursor: pointer;
 }
@@ -3530,7 +3531,7 @@ select#select-id {
     line-height: 1.5em;
 }
 .wait-btn {
-    background: #389ad4;
+    background: @mid-blue;
     border: none;
     background-color: #ffa337;
 
@@ -5496,12 +5497,12 @@ span.actions a span.checked-out {
     padding: 8px 10px;
     cursor: pointer;
     display: inline;
-    border: 1px solid #389AD4;
+    border: 1px solid @mid-blue;
     color: #95A865;
 }
 .page-banner a.button {
     text-decoration: none;
-    background: #389AD4;
+    background: @mid-blue;
     color: #ffe;
 }
 .page-banner a.button:hover {
