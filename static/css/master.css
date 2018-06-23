@@ -1,4 +1,5 @@
 @primary-blue: rgb(60,153,252);
+@link-blue: rgb(3,109,170);
 @light-yellow: rgb(255,253,205);
 
 .admin-section {
@@ -94,7 +95,7 @@ table.readinglog-stats tr:nth-child(even) {
 }
 
 .carousel .book h2.book-title a {
-    color: #036DAA;
+    color: @link-blue;
     text-decoration: none;
 }
 
@@ -210,7 +211,7 @@ blockquote, q {quotes: "" "";}
 
 /* SITE DEFAULTS */
 body {font-size:100%;line-height:normal;color:#333;}
-a:link{color:#036daa;text-decoration:underline;outline:none;}
+a:link{color:@link-blue;text-decoration:underline;outline:none;}
 a.on,a:hover.on,a:visited.on {color:#333;cursor:default;text-decoration:none;outline:none;}
 a:hover {color: #35672e;text-decoration:underline;outline:none;}
 a:visited {color: #036;text-decoration:underline;outline:none;}
@@ -238,7 +239,7 @@ button.larger{font-size:18px!important;}
 .teal {color: #00636a!important;}
 .darkgreen {color: #35672e!important;}
 .lightgreen {color: #748d36!important;}
-.blue {color: #036daa!important;}
+.blue {color: @link-blue!important;}
 .red {color: #e44028!important;}
 .yellow {color: @light-yellow!important;}
 .lightgrey,.lightgray {color:#999!important;}
@@ -279,7 +280,7 @@ button.plain:hover {color:#35672e;}
     display: flex;
 }
 .pagination a {display:block;text-decoration:none;padding:7px;border:1px solid #ddd;margin-right:10px;}
-.pagination a:hover {background:#036daa;color:#fff;display:block;float:left;text-decoration:none;padding:7px;border:1px solid #ddd;margin-right:10px;}
+.pagination a:hover {background:@link-blue;color:#fff;display:block;float:left;text-decoration:none;padding:7px;border:1px solid #ddd;margin-right:10px;}
 .pagination span.this {display:block;float:left;color:#000;padding:7px;border:1px solid #ddd;margin-right:10px;background-color:#efefef;}
 .onTop{z-index:20000!important;}
 .pagination span.ellipsis {display:block;float:left;color:#000;padding:8px;margin-right:10px;}
@@ -316,7 +317,7 @@ h2.publisher {font-size:1.375em;background-color:#efefef;padding:10px;margin:15p
 .head h2 a { color: inherit !important; text-decoration: none; }
 .head h2 a:hover { text-decoration: underline; }
 
-h2 a {color:#036daa;text-decoration:none;}
+h2 a {color:@link-blue;text-decoration:none;}
 h2 a:hover{color:#35672e;text-decoration:underline;}
 h3 {font-size: 1.0em;}
 h4 {font-size: 0.8125em;}
@@ -337,7 +338,7 @@ h1 span.count {font-size:14px!important;}
 .caption {font-size:0.5625em;font-family:"Lucida Grande",Verdana,Helvetica,Geneva,sans-serif;font-weight:normal;color:#666;text-transform:uppercase;}
 span.caption {position:absolute;right:0;bottom:2px;}
 a.toggle {text-decoration:none;color:#fff!important;background-color:#748d36!important;padding:3px;border-radius:3px;}
-a.toggle:hover{background-color:#036daa!important;color:#fff!important;}
+a.toggle:hover{background-color:@link-blue!important;color:#fff!important;}
 
 p{font-size:1.0em;color:#333;line-height:1.5em}
 #contentBody li,#contentBody blockquote {line-height:1.5em;}
@@ -1575,7 +1576,7 @@ div#scrollBtm {
 div.siteSearch input[type=submit] {
     padding: 11px;
     font-size: .9em;
-    background: #006aac;
+    background: @link-blue;
     color: #fff;
     border-radius: 5px;
     border: none;
@@ -1882,7 +1883,7 @@ div#abuse a:hover {color:#000;}
 div#abuse a:hover span {background-position: -608px 0;}
 
 div#editionBorrow, div#editionBuy {position:absolute;top:38px;right:0;padding:15px;background-color:#fff;border:1px solid #d3ccb0;border-radius:8px;-webkit-box-shadow: 1px 1px 10px #333;box-shadow: 1px 1px 10px #333;}
-div#editionBorrow a, div#editionBuy a {background-image:none!important;float:none!important;margin-left:0!important;width:auto!important;height:auto!important;padding-top:0;text-align:left;font-size:0.75em;font-weight:normal;color:#036daa;text-decoration:underline;}
+div#editionBorrow a, div#editionBuy a {background-image:none!important;float:none!important;margin-left:0!important;width:auto!important;height:auto!important;padding-top:0;text-align:left;font-size:0.75em;font-weight:normal;color:@link-blue;text-decoration:underline;}
 
 /* TOOLS ACCORDION */
 
@@ -2248,7 +2249,7 @@ div#headerLogin {
 }
 
 .modal-content a {
-    color: #036daa;
+    color: @link-blue;
 }
 
 .modal-icon {
@@ -2279,7 +2280,7 @@ div#headerLogin {
 }
 
 .xauth-switch {
-    background-color: #036DAA;
+    background-color: @link-blue;
     padding: 15px 20px;
     color: #fff;
     line-height: 1em;
@@ -2504,7 +2505,7 @@ div#footerHistory h4 {
     text-align: right;
 }
 div#footerHistory h4 a {color:#00636a;text-decoration:none;}
-div#footerHistory h4 a:hover {color:#036daa;text-decoration:underline;}
+div#footerHistory h4 a:hover {color:@link-blue;text-decoration:underline;}
 
 div#footerHistory .history {
     width: 160px;
@@ -2715,14 +2716,14 @@ div#homeRecent .history .timestamp {
 .home-h2 {
     font-size: 1.2em;
     font-weight: normal;
-    color: #036daa;
+    color: @link-blue;
     margin-bottom: .5em;
     margin-top: 1.75em;
 }
 
 /* NEW HOME PAGE */
 h1 a.header,h2 a.header, h3 a.header {color:#00636a!important;text-decoration:none!important;}
-h1 a.header:hover,h2 a.header:hover, h3 a.header:hover {color:#036daa!important;text-decoration:underline;}
+h1 a.header:hover,h2 a.header:hover, h3 a.header:hover {color:@link-blue!important;text-decoration:underline;}
 
 div.homeSplash {
     width: 958px;
@@ -2893,7 +2894,7 @@ p.category-title {
 
 #home-stats-charts .statschart .chartShow {height:60px;padding:0 5px;border-bottom: 1px solid #666;cursor:pointer;}
 #home-stats-charts .statschart a {color:#000;text-decoration:none;}
-#home-stats-charts .statschart:hover a,div.chartHome a:hover {color:#036daa;text-decoration:underline;}
+#home-stats-charts .statschart:hover a,div.chartHome a:hover {color:@link-blue;text-decoration:underline;}
 #home-stats-charts .statschart a span {display: block;}
 #home-stats-charts .statschart a .ticks {font-family:"Georgia","Times New Roman",serif;font-size:1.125em;font-weight:700;padding-top:5px;}
 #home-stats-charts .statschart a .label {font-family:"Lucida Grande","Arial","Helvetica",sans-serif;font-size:0.625em;text-transform:uppercase;}
@@ -2960,8 +2961,8 @@ div#searchResults ul {
 }
 a.results:link { color: #000; text-decoration: none;}
 a.results:visited { color: #000; text-decoration: none;}
-a.results:hover { color: #036daa; text-decoration: underline;}
-a.results:active { color: #036daa; text-decoration: underline;}
+a.results:hover { color: @link-blue; text-decoration: underline;}
+a.results:active { color: @link-blue; text-decoration: underline;}
 
 div#searchResults.work,
 div#searchResults.work ul,
@@ -3236,7 +3237,7 @@ a.facetSubject:link, a.facetSubject:visited {
     text-decoration: none;
 }
 a.facetSubject:hover, a.facetSubject:active {
-    color: #036daa;
+    color: @link-blue;
     text-decoration: underline;
 }
 
@@ -3615,7 +3616,7 @@ li.edition-cover img {
 }
 li.edition-cover img:hover {
     cursor: pointer;
-    border: 5px solid #036daa;
+    border: 5px solid @link-blue;
 }
 li.selected img {
     border: 5px solid #ffa337;
@@ -4674,10 +4675,10 @@ a.coverLook {
 }
 .ui-tabs-nav a:link,
 .ui-tabs-nav a:visited {
-    color: #036daa;
+    color: @link-blue;
 }
 .ui-tabs-nav a:hover {
-    color: #036daa;
+    color: @link-blue;
     text-decoration: underline;
 }
 .ui-tabs-nav .ui-tabs-selected a {
@@ -5051,7 +5052,7 @@ div.merge div.record .name {
     color: #000;
 }
 div.merge div.record .name a:link, div.merge div.record .name a:visited { color: #000; text-decoration: none;}
-div.merge div.record .name a:hover, div.merge div.record .name a:active { color: #036daa; text-decoration: underline;}
+div.merge div.record .name a:hover, div.merge div.record .name a:active { color: @link-blue; text-decoration: underline;}
 div.merge div.record label {
     display: block;
     width: 710px;
@@ -5136,8 +5137,8 @@ body#user #borrowTable table th.titles, body#admin #borrowTable table th.titles 
 
 a.borrowResults:link { color: #000; text-decoration: none;}
 a.borrowResults:visited { color: #000; text-decoration: none;}
-a.borrowResults:hover { color: #036daa; text-decoration: underline;}
-a.borrowResults:active { color: #036daa; text-decoration: underline;}
+a.borrowResults:hover { color: @link-blue; text-decoration: underline;}
+a.borrowResults:active { color: @link-blue; text-decoration: underline;}
 
 div.preSubmit, div.postSubmit {
     text-align: center;
@@ -5464,7 +5465,7 @@ span.actions a span.checked-out {
 .page-banner {
     color: #fff;
     font-family:"Lucida Grande", Verdana, Geneva, Helvetica, Arial, sans-serif;
-    background: #036DAA;
+    background: @link-blue;
     padding: 15px;
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
@@ -5838,8 +5839,8 @@ p.print-disabled-download {
     background: inherit;
     border: none;
     padding: 0px;
-    color: #036daa;
-    border-bottom: 1px solid #036daa;
+    color: @link-blue;
+    border-bottom: 1px solid @link-blue;
     margin-bottom: 15px;
 
 }
@@ -5910,7 +5911,7 @@ ul#myreads-paginator li {
 }
 
 ul#myreads-paginator li:hover {
-    background-color: #036daa;
+    background-color: @link-blue;
     color: #fff;
 }
 
@@ -5954,7 +5955,7 @@ ul#myreads-paginator li.selected:hover {
 
 .mybooks-menu a {
     text-decoration: none;
-    color: #036daa;
+    color: @link-blue;
 }
 
 .mybooks-menu ul.preset-lists, .mybooks-menu ul.loans-lists, .mybooks-menu ul.user-lists {
