@@ -2,6 +2,7 @@
 @link-blue: rgb(3,109,170);
 @mid-blue: rgb(52,152,219);
 @light-yellow: rgb(255,253,205);
+@light-grey: rgb(238,238,238);
 
 .admin-section {
     border-left: 4px solid #a7cee4;
@@ -20,7 +21,7 @@ table.readinglog-stats th {
 }
 
 table.readinglog-stats tr:nth-child(even) {
-    background-color: #eee;
+    background-color: @light-grey;
 }
 
 .carousel-container {
@@ -534,7 +535,7 @@ header#header-bar .search-component .search-dropdown ul.search-results li a img 
     min-width: 40px;
     height: 60px;
     min-height: 60px;
-    background-color: #eee;
+    background-color: @light-grey;
     margin-right: 10px;
 }
 
@@ -2669,7 +2670,7 @@ div.editThis {
 div#homeSplash {
     width: 958px;
     height: 100px;
-    background: #eee url("/images/homesplash.jpg") no-repeat;
+    background: @light-grey url("/images/homesplash.jpg") no-repeat;
     text-align: center;
     padding-top: 100px;
     overflow: hidden;
@@ -2688,9 +2689,9 @@ div#homeBlurb p {
     word-wrap: break-word;
 }
 div#homeStatement {
-    background: #eee -moz-linear-gradient(top,white,gainsboro);
-    background: #eee -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee), color-stop(1.0, #eee));
-    background-color: #eee;
+    background: @light-grey -moz-linear-gradient(top,white,gainsboro);
+    background: @light-grey -webkit-gradient(linear, left top, left bottom, from(#fff), to(@light-grey), color-stop(1.0, @light-grey));
+    background-color: @light-grey;
     filter: progid:DXImageTransform.Microsoft.Gradient(enabled='true',startColorstr=#FFFFFFFF, endColorstr=#FFEEEEEE);
     text-align: center;
     padding: 20px 0;
@@ -2729,7 +2730,7 @@ h1 a.header:hover,h2 a.header:hover, h3 a.header:hover {color:@link-blue!importa
 div.homeSplash {
     width: 958px;
     height: 100px;
-    background: #eee url("/images/homesplash.jpg") no-repeat 0 -45px;
+    background: @light-grey url("/images/homesplash.jpg") no-repeat 0 -45px;
     text-align: center;
     padding-top: 50px;
     overflow: hidden;
@@ -3292,7 +3293,7 @@ div.list .owner {
 /* BOOKS */
 
 .section.book-overview {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid @light-grey;
     padding-bottom: 25px;
 }
 
@@ -4896,7 +4897,7 @@ table#adminHistory {
     margin: 0 0 20px;
 }
 table#adminHistory th {
-    background-color: #eee;
+    background-color: @light-grey;
     border-bottom: 1px solid #cbc4a7;
     color: #666;
     font-size: 0.8675em;
@@ -4944,7 +4945,7 @@ div.tweet_date a {color:#666;text-decoration:none;}
 
 
 div.grippie {
-    background: #eee url("/images/grippie.png") no-repeat scroll center 2px;
+    background: @light-grey url("/images/grippie.png") no-repeat scroll center 2px;
     border-color: #ddd;
     border-style: solid;
     border-width: 0 1px 1px;
@@ -5294,7 +5295,7 @@ ul.listLists li {
     display: -webkit-flex;
     display: flex;
     background-color: #fcfcfc;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid @light-grey;
 }
 ul.listLists li .image {width:42px;min-height:35px;padding: 0px 10px;}
 ul.listLists li .image img {width:32px;}
@@ -5381,7 +5382,7 @@ div#subjectLists div.dropper div.dropdown {
 }
 
 #widget-add div.dropper div.dropdown p.create{
-    border-top: 1px solid #eee;
+    border-top: 1px solid @light-grey;
     padding: 5px 10px;
     text-decoration: none;
     font-weight: bold;
@@ -5769,7 +5770,7 @@ div.tools-override div.dropper {
 
 .Tools .check-availability {
     padding: 10px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid @light-grey;
     border-radius: 3px;
 }
 
@@ -5857,7 +5858,7 @@ p.print-disabled-download {
 }
 
 .related-books {
-    border-top: 1px solid #eee;
+    border-top: 1px solid @light-grey;
     margin-top: 15px;
     clear: both;
 }
@@ -5876,7 +5877,7 @@ p.print-disabled-download {
     text-align: left;
     font-size: .8em;
     padding: 10px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid @light-grey;
 }
 
 .read-statuses form:last-child  button.nostyle-btn {
@@ -5889,7 +5890,7 @@ p.print-disabled-download {
 }
 
 .read-statuses {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid @light-grey;
 }
 
 ul#myreads-paginator {
@@ -5940,7 +5941,7 @@ ul#myreads-paginator li.selected:hover {
 }
 
 .mybooks {
-    border-top: 1px solid #eee;
+    border-top: 1px solid @light-grey;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -5950,7 +5951,7 @@ ul#myreads-paginator li.selected:hover {
 
 .mybooks-menu {
     padding-right: 10px;
-    border-right: 1px solid #eee;
+    border-right: 1px solid @light-grey;
     max-width: 200px;
 }
 
@@ -5962,7 +5963,7 @@ ul#myreads-paginator li.selected:hover {
 .mybooks-menu ul.preset-lists, .mybooks-menu ul.loans-lists, .mybooks-menu ul.user-lists {
     padding: 10px;
     padding-left: 0px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid @light-grey;
 }
 
 .mybooks-menu ul.user-lists {
