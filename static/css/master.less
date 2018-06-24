@@ -1,20 +1,4 @@
-@primary-blue: rgb(60, 153, 252);
-@link-blue: rgb(3, 109, 170);
-@mid-blue: rgb(52, 152, 219);
-@light-yellow: rgb(255, 253, 205);
-@light-grey: rgb(238, 238, 238);
-@beige: rgb(226, 220, 197);
-@dark-grey: rgb(51, 51, 51);
-@white: rgb(255, 255, 255);
-@black: rgb(0, 0, 0);
-
-// book cover carousel component
-@book-cover-carousel-background: rgb(243, 237, 215);
-@book-cover-carousel-border-top: rgb(235, 232, 216);
-@book-cover-carousel-border-bottom: rgb(229, 225, 204);
-
-// book cover
-@book-cover-shadow-color: rgb(195, 182, 131);
+@import (less) 'colors.less';
 
 .admin-section {
   border-left: 4px solid #a7cee4; // this is the only instance of this color. depreciate?
@@ -33,7 +17,7 @@ table.readinglog-stats th {
 }
 
 table.readinglog-stats tr:nth-child(even) {
-  background-color: @light-grey;
+  background-color: @lightest-grey;
 }
 
 .carousel-container {
@@ -153,7 +137,7 @@ table.readinglog-stats tr:nth-child(even) {
 }
 .ac_results .ac_author .books {
   font-size: 12px;
-  color: #35672e;
+  color: @dark-green;
   font-weight: 700;
   padding: 0;
 }
@@ -161,14 +145,14 @@ table.readinglog-stats tr:nth-child(even) {
   font-size: 11px;
 }
 .ac_results .ac_author .work i {
-  color: #615132;
+  color: @brown;
 }
 .ac_results .ac_author .subject {
   font-size: 11px;
 }
 .ac_results .ac_author .action {
   font-size: 9px;
-  color: #748d36;
+  color: @olive;
 }
 
 /* LANGUAGE AUTOCOMPLETE */
@@ -193,7 +177,7 @@ table.readinglog-stats tr:nth-child(even) {
 }
 .ac_results .ac_work .edition_count {
   font-size: 12px;
-  color: #35672e;
+  color: @dark-green;
   font-weight: 700;
   padding: 0;
 }
@@ -331,7 +315,7 @@ q:after {
 }
 blockquote,
 q {
-  quotes: '' '';
+  quotes: "" "";
 }
 
 /* SITE DEFAULTS */
@@ -354,12 +338,12 @@ a:visited.on {
   outline: none;
 }
 a:hover {
-  color: #35672e;
+  color: @dark-green;
   text-decoration: underline;
   outline: none;
 }
 a:visited {
-  color: #036;
+  color: @dark-blue;
   text-decoration: underline;
   outline: none;
 }
@@ -415,10 +399,10 @@ button.larger {
 }
 .attn,
 .neg {
-  color: #e44028 !important;
+  color: @red !important;
 }
 .pos {
-  color: #35672e !important;
+  color: @dark-green !important;
 }
 .black {
   color: @black!important;
@@ -427,36 +411,36 @@ button.larger {
   background-color: @light-yellow;
 }
 .orange {
-  color: #ffa337 !important;
+  color: @orange !important;
 }
 .brown {
-  color: #615132 !important;
+  color: @brown !important;
 }
 .teal {
-  color: #00636a !important;
+  color: @teal !important;
 }
 .darkgreen {
-  color: #35672e !important;
+  color: @dark-green !important;
 }
 .lightgreen {
-  color: #748d36 !important;
+  color: @olive !important;
 }
 .blue {
   color: @link-blue!important;
 }
 .red {
-  color: #e44028 !important;
+  color: @red !important;
 }
 .yellow {
   color: @light-yellow!important;
 }
 .lightgrey,
 .lightgray {
-  color: #999 !important;
+  color: @light-grey !important;
 }
 .gray,
 .grey {
-  color: #666 !important;
+  color: @grey !important;
 }
 .darkgray,
 .darkgrey {
@@ -491,7 +475,7 @@ button.larger {
   text-decoration: underline !important;
 }
 .lighter {
-  color: #666;
+  color: @grey;
 }
 .bold {
   font-weight: bold !important;
@@ -537,12 +521,12 @@ button.plainText {
   border: none;
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, Arial, sans-serif;
   font-size: 0.75em;
-  color: #e44028;
+  color: @red;
   background-color: @white;
   cursor: pointer;
 }
 button.plainText:hover {
-  color: #35672e;
+  color: @dark-green;
 }
 button.plain {
   border: none;
@@ -553,12 +537,12 @@ button.plain {
   cursor: pointer;
 }
 button.plain:hover {
-  color: #35672e;
+  color: @dark-green;
 }
 #tooltip {
   position: absolute;
   display: none;
-  border: 1px solid #dedede;
+  border: 1px solid @lighter-grey;
   padding: 4px;
   background-color: @white;
   font-size: 0.75em;
@@ -576,7 +560,7 @@ button.plain:hover {
   display: block;
   text-decoration: none;
   padding: 7px;
-  border: 1px solid #ddd;
+  border: 1px solid @lighter-grey;
   margin-right: 10px;
 }
 .pagination a:hover {
@@ -586,7 +570,7 @@ button.plain:hover {
   float: left;
   text-decoration: none;
   padding: 7px;
-  border: 1px solid #ddd;
+  border: 1px solid @lighter-grey;
   margin-right: 10px;
 }
 .pagination span.this {
@@ -594,7 +578,7 @@ button.plain:hover {
   float: left;
   color: @black;
   padding: 7px;
-  border: 1px solid #ddd;
+  border: 1px solid @lighter-grey;
   margin-right: 10px;
   background-color: #efefef;
 }
@@ -610,7 +594,7 @@ button.plain:hover {
 }
 .breadcrumbs {
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, Arial, sans-serif;
-  color: #615132;
+  color: @brown;
   font-size: 11px;
   padding-bottom: 10px;
 }
@@ -619,7 +603,7 @@ button.plain:hover {
   background-color: pink !important;
 }
 .adminOnly {
-  background-color: #ffa337 !important;
+  background-color: @orange !important;
   padding: 4px;
   border-radius: 4px;
 }
@@ -654,7 +638,7 @@ div.head.rel {
 div.superNav {
   font-size: 0.6875em;
   font-family: 'Lucida Grande', Verdana, Helvetica, Geneva, sans-serif;
-  color: #666;
+  color: @grey;
   margin-bottom: 5px;
 }
 h1,
@@ -664,7 +648,7 @@ h4,
 h5,
 h6 {
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, Arial, sans-serif;
-  color: #666;
+  color: @grey;
   font-weight: 600;
 }
 h1 {
@@ -682,7 +666,7 @@ h1 span.subtitle {
   padding: 0;
 }
 h1.publisher {
-  color: #615132;
+  color: @brown;
   font-size: 1.375em;
   font-family: Georgia, 'Palatino Linotype', 'Book Antiqua', Palatino, serif !important;
   font-weight: normal !important;
@@ -692,7 +676,7 @@ h2 {
   font-size: 1.375em;
 }
 h2.author {
-  color: #615132;
+  color: @brown;
   font-size: 1.125em;
   font-weight: normal;
 }
@@ -706,7 +690,7 @@ h2.edition {
   font-weight: normal;
 }
 h2.authorEdition {
-  color: #615132;
+  color: @brown;
   font-size: 1em;
   font-weight: normal;
   margin: 0;
@@ -732,7 +716,7 @@ h2 a {
   text-decoration: none;
 }
 h2 a:hover {
-  color: #35672e;
+  color: @dark-green;
   text-decoration: underline;
 }
 h3 {
@@ -770,7 +754,7 @@ span.tools {
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, sans-serif;
 }
 span.tools span.label {
-  background-color: #ffa337;
+  background-color: @orange;
   color: @white;
   font-weight: normal !important;
   padding: 3px;
@@ -784,7 +768,7 @@ h6.title {
   font-size: 12px;
   font-weight: normal !important;
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, sans-serif;
-  color: #666;
+  color: @grey;
   margin: 0;
   padding: 0;
 }
@@ -807,7 +791,7 @@ span.count {
   font-size: 12px !important;
   font-weight: normal !important;
   font-family: 'Lucida Grande', Verdana, Helvetica, Geneva, sans-serif;
-  color: #615132;
+  color: @brown;
   white-space: nowrap;
   padding: 5px 5px 0 5px;
 }
@@ -821,7 +805,7 @@ h1 span.count {
   font-size: 0.5625em;
   font-family: 'Lucida Grande', Verdana, Helvetica, Geneva, sans-serif;
   font-weight: normal;
-  color: #666;
+  color: @grey;
   text-transform: uppercase;
 }
 span.caption {
@@ -832,7 +816,7 @@ span.caption {
 a.toggle {
   text-decoration: none;
   color: @white!important;
-  background-color: #748d36 !important;
+  background-color: @olive !important;
   padding: 3px;
   border-radius: 3px;
 }
@@ -886,7 +870,7 @@ p.instruct {
 p.alert {
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, sans-serif;
   font-size: 0.875em;
-  color: #615132;
+  color: @brown;
   background-color: @light-yellow;
   background-position: 10px 50%;
   background-repeat: no-repeat;
@@ -968,7 +952,7 @@ header#header-bar {
   text-align: left;
   font-weight: 300;
   font-size: 0.9em;
-  color: #666;
+  color: @grey;
   margin: 3px;
   padding: 0px;
   line-height: 0px;
@@ -1020,7 +1004,7 @@ header#header-bar .search-component .search-bar-submit {
   border: 0 none;
   outline: none;
   background: #fafafa;
-  color: #999;
+  color: @light-grey;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
@@ -1048,7 +1032,7 @@ header#header-bar .search-component .search-dropdown ul.search-results {
 header#header-bar .search-component .search-dropdown ul.search-results li {
   text-align: left;
   padding: 7px;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid @lighter-grey;
   font-size: 0.9rem;
 }
 
@@ -1080,7 +1064,7 @@ header#header-bar
   min-width: 40px;
   height: 60px;
   min-height: 60px;
-  background-color: @light-grey;
+  background-color: @lightest-grey;
   margin-right: 10px;
 }
 
@@ -1114,7 +1098,7 @@ header#header-bar
   a
   .book-desc
   .book-author {
-  color: #036;
+  color: @dark-blue;
 }
 
 header#header-bar .search-component .search-bar-advanced-btn {
@@ -1246,7 +1230,7 @@ header#header-bar .search-component .search-facet {
   border-top-right-radius: 0px;
   background-color: rgba(226, 220, 197, 0.32);
   border: none;
-  border-right: 1px solid #ddd;
+  border-right: 1px solid @lighter-grey;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   font-weight: 500;
@@ -1943,7 +1927,7 @@ div#noLogin {
 .flash-messages .bookadded span h3 em {
   font-style: italic;
   font-weight: 700;
-  color: #35672e;
+  color: @dark-green;
 }
 .flash-messages .bookadded span p.list span.red {
   font-family: 'Georgia', 'Times New Roman', serif;
@@ -2005,7 +1989,7 @@ div.formElement .input label {
 div.formElement .tip,
 div.TitleAuthor .tip {
   font-size: 11px;
-  color: #666;
+  color: @grey;
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, Arial, sans-serif !important;
 }
 div.formElement p.tip {
@@ -2036,13 +2020,13 @@ fieldset.minor {
 fieldset.major legend {
   padding: 5px 0;
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, Arial, sans-serif;
-  color: #00636a;
+  color: @teal;
   font-weight: 600;
   font-size: 1.375em;
 }
 fieldset.minor legend {
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, Arial, sans-serif;
-  color: #00636a;
+  color: @teal;
   font-weight: 600;
   font-size: 1.125em;
 }
@@ -2059,7 +2043,7 @@ div.formDivider {
 }
 .librarian {
   padding: 0 10px 10px 10px;
-  border-left: 10px solid #748d36;
+  border-left: 10px solid @olive;
   margin-bottom: 20px;
 }
 .librarian input[type='text'],
@@ -2071,7 +2055,7 @@ div.formDivider {
   float: right;
   z-index: 1000;
   padding: 3px 5px;
-  border-left: 10px solid #748d36;
+  border-left: 10px solid @olive;
 }
 
 .librarian-on {
@@ -2188,17 +2172,17 @@ div#usernameResult {
   padding-top: 5px;
 }
 .invalid {
-  color: #e44028;
+  color: @red;
 }
 input.invalid {
-  border: 1px solid #e44028;
+  border: 1px solid @red;
   color: @dark-grey;
 }
 label.invalid {
-  color: #e44028;
+  color: @red;
 }
 .valid {
-  color: #35672e;
+  color: @dark-green;
   padding: 5px 0 0 29px !important;
 }
 input.highlight {
@@ -2364,7 +2348,7 @@ div.searchOptions label {
 p.searchSuggest {
   padding: 0;
   margin: -10px 0 20px 0;
-  color: #615132;
+  color: @brown;
   font-family: 'Lucida Grande', 'Trebuchet MS', Geneva, Helvetica, Arial,
     sans-serif;
   font-size: 14px;
@@ -2461,7 +2445,7 @@ fieldset.home legend {
   position: relative;
   padding: 0;
   width: 400px;
-  border: 10px solid #615132;
+  border: 10px solid @brown;
   background-color: @white;
   border-radius: 12px;
   -webkit-box-shadow: 1px 3px 10px @black;
@@ -2471,7 +2455,7 @@ fieldset.home legend {
 .ui-dialog .ui-dialog-titlebar {
   padding: 10px;
   position: relative;
-  background-color: #615132;
+  background-color: @brown;
   color: @white;
   font-size: 1.75em;
   margin: 0;
@@ -2596,7 +2580,7 @@ div.cclicense {
   font-size: 0.75em;
   min-height: 20px;
   padding: 3px 0 0 30px;
-  color: #615132;
+  color: @brown;
   margin-bottom: 12px;
   background: url('/images/logo_CC0-20px.png') 0 0 no-repeat;
 }
@@ -2609,7 +2593,7 @@ div.adminDelete {
   overflow: visible;
   text-align: center;
   font-size: 12px;
-  color: #666;
+  color: @grey;
 }
 body#edit #editHead {
   background: url('/images/logo_OL-sm.png') 20px 15px no-repeat;
@@ -2622,13 +2606,13 @@ body#edit #editHead h2 {
 }
 body#edit #editHead h2 a {
   font-family: 'Lucida Grande', 'Trebuchet MS', Geneva, Helvetica, sans-serif;
-  color: #e44028;
+  color: @red;
   font-size: 14px;
   font-weight: normal;
   text-decoration: underline;
 }
 body#edit #editHead p {
-  color: #615132;
+  color: @brown;
   font-size: 14px;
   margin: 0;
 }
@@ -2645,7 +2629,7 @@ body#edit .formElement.pagetype select {
   float: left;
 }
 a.cancel {
-  color: #e44028;
+  color: @red;
   padding-right: 21px;
   background-image: url('/images/icons/icon_cancel.png');
   background-repeat: no-repeat;
@@ -2673,7 +2657,7 @@ div#abuse a {
   text-align: center;
   font-size: 0.625em;
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, sans-serif;
-  color: #615132;
+  color: @brown;
   text-decoration: none;
   white-space: nowrap;
   font-weight: 600;
@@ -2762,7 +2746,7 @@ div#editInfo {
 a.linkButton {
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, Arial, sans-serif;
   text-decoration: none;
-  color: #666;
+  color: @grey;
   border: 1px solid #ccc;
 }
 
@@ -2798,7 +2782,7 @@ div#revertNotice {
   height: 45px;
   text-align: center;
   padding-top: 15px;
-  background-color: #35672e;
+  background-color: @dark-green;
 }
 body#edit div#revertNotice,
 body#form div#revertNotice {
@@ -2844,7 +2828,7 @@ div.Tools h3 span.icon {
 div.Tools h4 {
   font-size: 1em;
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, Arial, sans-serif;
-  color: #00636a;
+  color: @teal;
   font-weight: 600;
   margin: 0 0 10px 0;
   padding: 0;
@@ -2884,7 +2868,7 @@ div.Tools h3 span.head {
   color: @black;
 }
 div.Tools h3.closed span.head {
-  color: #666;
+  color: @grey;
 }
 div.Tools h3 span.subhead {
   padding-left: 10px;
@@ -2903,12 +2887,12 @@ div.Tools div.panel li {
   list-style-type: none;
   font-size: 0.75em;
   margin-top: 0;
-  color: #666;
+  color: @grey;
 }
 div.Tools div.panel p {
   font-size: 0.75em;
   margin-top: 0;
-  color: #666;
+  color: @grey;
 }
 #external-links div.panel ul.booklinks li {
   list-style: none;
@@ -2992,7 +2976,7 @@ div.Tools div.dropit {
   min-height: 45px;
 }
 div.Tools div.dropit p.listed {
-  color: #666;
+  color: @grey;
   font-size: 0.8125em;
   padding: 0 0 0 42px;
   margin: 0 0 5px;
@@ -3059,7 +3043,7 @@ div.Tools div.dropper div.dropdown p {
   padding-left: 0;
   margin-bottom: 5px;
   margin-top: 0;
-  color: #666;
+  color: @grey;
 }
 div.Tools div.dropper div.dropdown p span {
   font-size: 0.8125em;
@@ -3068,7 +3052,7 @@ div.Tools div.dropper div.dropdown p a {
   font-size: 0.875em;
 }
 div.Tools div.dropper div.dropdown {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid @lighter-grey;
   display: none;
 }
 
@@ -3202,7 +3186,7 @@ div#headerLogin {
   text-align: right;
   font-size: 0.6875em;
   padding-top: 20px;
-  color: #666;
+  color: @grey;
 }
 #headerLogin #headerUser {
   position: relative;
@@ -3219,7 +3203,7 @@ div#headerLogin {
 }
 #headerLogin #userToggle .arrow {
   text-decoration: none;
-  color: #666;
+  color: @grey;
   font-size: 8px;
 }
 #headerLogin #headerUserOpen {
@@ -3270,7 +3254,7 @@ div#headerLogin {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0, 0, 0);
+  background-color: @black;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -3412,7 +3396,7 @@ hr.forgot-padding {
 
 .modal-x:hover,
 .modal-x:focus {
-  color: black;
+  color: @black;
   text-decoration: none;
   cursor: pointer;
 }
@@ -3473,7 +3457,7 @@ hr.forgot-padding {
 }
 
 .modal-form .inputbr {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid @lighter-grey;
 }
 
 .modal-form input:-webkit-autofill {
@@ -3496,7 +3480,7 @@ a.generic-button {
 
 .generic-button-primary {
   text-decoration: none;
-  background: #e44028;
+  background: @red;
   color: @white !important;
   padding: 13px 10px;
   border-radius: 3px;
@@ -3564,7 +3548,7 @@ div.subNav li {
   display: inline-block;
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, Arial, sans-serif;
   font-size: 0.9em;
-  color: #615132;
+  color: @brown;
 }
 div.footerNav li {
   padding: 10px;
@@ -3586,7 +3570,7 @@ div#footerHistory h4 {
   text-align: right;
 }
 div#footerHistory h4 a {
-  color: #00636a;
+  color: @teal;
   text-decoration: none;
 }
 div#footerHistory h4 a:hover {
@@ -3600,13 +3584,13 @@ div#footerHistory .history {
   padding-right: 20px;
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, sans-serif;
   font-size: 0.6875em;
-  color: #666;
+  color: @grey;
   white-space: normal;
   word-break: normal;
   word-wrap: break-word;
 }
 div#footerHistory .history .timestamp {
-  color: #999;
+  color: @light-grey;
 }
 
 div#footerHistory ul li.around-the-library-link {
@@ -3728,7 +3712,7 @@ div.contentBody.indent {
   padding: 0 70px 20px;
 }
 div.contentBody.gradient {
-  background: #999;
+  background: @light-grey;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff4f4f4', endColorstr='#ffffffff');
   background: -webkit-gradient(
     linear,
@@ -3763,14 +3747,14 @@ div.editThis {
 div#homeSplash {
   width: 958px;
   height: 100px;
-  background: @light-grey url('/images/homesplash.jpg') no-repeat;
+  background: @lightest-grey url('/images/homesplash.jpg') no-repeat;
   text-align: center;
   padding-top: 100px;
   overflow: hidden;
 }
 div#homeBlurb {
   margin: 0 20%;
-  background-color: #e44028;
+  background-color: @red;
   min-height: 100px;
 }
 div#homeBlurb p {
@@ -3782,9 +3766,9 @@ div#homeBlurb p {
   word-wrap: break-word;
 }
 div#homeStatement {
-  background: @light-grey -moz-linear-gradient(top, @white, gainsboro);
-  background: @light-grey -webkit-gradient(linear, left top, left bottom, from(@white), to(@light-grey), color-stop(1, @light-grey));
-  background-color: @light-grey;
+  background: @lightest-grey -moz-linear-gradient(top, @white, gainsboro);
+  background: @lightest-grey -webkit-gradient(linear, left top, left bottom, from(@white), to(@lightest-grey), color-stop(1, @lightest-grey));
+  background-color: @lightest-grey;
   filter: progid:DXImageTransform.Microsoft.Gradient(enabled='true',startColorstr=#FFFFFFFF, endColorstr=#FFEEEEEE);
   text-align: center;
   padding: 20px 0;
@@ -3811,10 +3795,10 @@ div#homeRecent .history {
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, sans-serif;
   font-size: 0.6875em;
   padding-bottom: 10px;
-  color: #666;
+  color: @grey;
 }
 div#homeRecent .history .timestamp {
-  color: #666;
+  color: @grey;
 }
 .home-h2 {
   font-size: 1.2em;
@@ -3828,7 +3812,7 @@ div#homeRecent .history .timestamp {
 h1 a.header,
 h2 a.header,
 h3 a.header {
-  color: #00636a !important;
+  color: @teal !important;
   text-decoration: none !important;
 }
 h1 a.header:hover,
@@ -3841,7 +3825,7 @@ h3 a.header:hover {
 div.homeSplash {
   width: 958px;
   height: 100px;
-  background: @light-grey url('/images/homesplash.jpg') no-repeat 0 -45px;
+  background: @lightest-grey url('/images/homesplash.jpg') no-repeat 0 -45px;
   text-align: center;
   padding-top: 50px;
   overflow: hidden;
@@ -3849,7 +3833,7 @@ div.homeSplash {
 }
 div.homeBlurb {
   margin: 0 20%;
-  background-color: #e44028;
+  background-color: @red;
   min-height: 100px;
 }
 div.homeBlurb p {
@@ -3919,7 +3903,7 @@ ul#olBlog li {
   padding: 10px;
   text-align: center;
   float: left;
-  background: #dedede;
+  background: @lighter-grey;
   cursor: pointer;
   display: none;
 }
@@ -3977,7 +3961,7 @@ div#content div.contentLists {
   padding-top: 19px;
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, sans-serif;
   font-weight: normal;
-  color: #666;
+  color: @grey;
   font-size: 0.6875em;
 }
 .resultsCovers h2 {
@@ -3988,7 +3972,7 @@ div#content div.contentLists {
   text-align: center;
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, sans-serif;
   font-weight: normal;
-  color: #666;
+  color: @grey;
   font-size: 14px;
 }
 
@@ -4017,7 +4001,7 @@ p.category-count {
   text-align: center;
   font-size: 0.7em;
   line-height: 1;
-  color: #666;
+  color: @grey;
   padding: 0px;
   margin: 0px;
   margin-top: 5px;
@@ -4078,14 +4062,14 @@ p.category-title {
   width: 145px;
   height: 60px;
   padding: 0 5px;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid @grey;
   cursor: pointer;
 }
 
 #home-stats-charts .statschart .chartShow {
   height: 60px;
   padding: 0 5px;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid @grey;
   cursor: pointer;
 }
 #home-stats-charts .statschart a {
@@ -4353,7 +4337,7 @@ a.cta-btn {
 }
 
 .borrow_unavailable {
-  background-color: #ffa337;
+  background-color: @orange;
 }
 
 .borrow_missing {
@@ -4393,7 +4377,7 @@ div#searchResults .SRPCoverBlank {
   margin: 0 15px 20px 0;
   text-align: center;
   float: left;
-  background: #dedede;
+  background: @lighter-grey;
   cursor: pointer;
   display: none;
 }
@@ -4423,7 +4407,7 @@ div#searchResults .SRPCoverBlank a {
 }
 #pullOut p {
   font-size: 0.625em;
-  color: #666;
+  color: @grey;
   margin: 0;
   padding: 0;
 }
@@ -4440,7 +4424,7 @@ div#searchResults .SRPCoverBlank a {
   margin-bottom: 1.5em;
   width: 800px;
   font-size: 1em;
-  color: #666;
+  color: @grey;
 }
 .subjectList ul {
   margin-top: 30px;
@@ -4550,20 +4534,20 @@ div.list h5 span {
 div.list .tags {
   font-family: 'Lucida Grande', Arial, Geneva, Helvetica, sans-serif;
   font-size: 0.6875em;
-  color: #666;
+  color: @grey;
   margin-bottom: 5px;
 }
 div.list .owner {
   font-family: 'Lucida Grande', Arial, Geneva, Helvetica, sans-serif;
   font-size: 0.6875em;
-  color: #666;
+  color: @grey;
   text-align: right;
 }
 
 /* BOOKS */
 
 .section.book-overview {
-  border-bottom: 1px solid @light-grey;
+  border-bottom: 1px solid @lightest-grey;
   padding-bottom: 25px;
 }
 
@@ -4577,7 +4561,7 @@ h1.work-title {
 h2.work-subtitle {
   font-family: Georgia, 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
   margin: 5px 0px 5px 0px;
-  color: #666;
+  color: @grey;
   font-size: 1.1em;
   font-weight: normal;
   font-style: italic;
@@ -4668,7 +4652,7 @@ div.work {
 div.work span.work,
 div.work span.author {
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, Arial, sans-serif;
-  color: #615132;
+  color: @brown;
   font-size: 1.125em;
 }
 div.work span.work {
@@ -4676,7 +4660,7 @@ div.work span.work {
 }
 div.work span.editions {
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, Arial, sans-serif;
-  color: #615132;
+  color: @brown;
   font-size: 1.125em;
 }
 .illustration img {
@@ -4692,7 +4676,7 @@ div.work span.editions {
   height: 225px;
   padding: 15px;
   text-align: center;
-  background: #dedede;
+  background: @lighter-grey;
   font-size: 1em;
   display: none;
 }
@@ -4737,7 +4721,7 @@ div.work span.editions {
   display: none;
 }
 .illustration .Author {
-  color: #666;
+  color: @grey;
   font-style: italic;
   padding: 4px 4px 0;
   font-size: 11px;
@@ -4798,7 +4782,7 @@ div.books .SRPCoverBlank {
   font-size: 0.6875em;
   cursor: pointer;
   display: none;
-  background-color: #dedede;
+  background-color: @lighter-grey;
 }
 div.books .SRPCoverBlank .innerBorder {
   border: 1px solid @white;
@@ -4816,7 +4800,7 @@ div.books .BookTitle {
   color: @dark-grey;
 }
 div.books .Author {
-  color: #666;
+  color: @grey;
   font-style: italic;
   padding: 4px 4px 0;
   font-size: 0.6875em;
@@ -4875,13 +4859,13 @@ ul.urlList li span.url {
 ul.urlList li span.quote {
   font-family: Georgia, 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
   font-size: 0.75em;
-  color: #666;
+  color: @grey;
 }
 ul.urlList span.date {
   font-family: 'Lucida Grande', 'Trebuchet MS', Geneva, Helvetica, Arial,
     sans-serif;
   font-size: 0.6875em;
-  color: #666;
+  color: @grey;
 }
 #contentBody ul.contributors {
   margin-top: 10px;
@@ -4889,7 +4873,7 @@ ul.urlList span.date {
   font-family: 'Lucida Grande', 'Trebuchet MS', Geneva, Helvetica, Arial,
     sans-serif;
   font-size: 0.8125em;
-  color: #666;
+  color: @grey;
 }
 #contentBody ul.contributors li {
   list-style: none !important;
@@ -4897,7 +4881,7 @@ ul.urlList span.date {
 }
 #contentBody ul.contributors li span {
   font-size: 11px;
-  color: #615132;
+  color: @brown;
 }
 form.olform.books .input,
 form.olform.books .label {
@@ -4956,7 +4940,7 @@ img.cover {
   box-shadow: 1px 1px 2px 0px @book-cover-shadow-color;
 }
 #cover {
-  border: 2px solid #615132;
+  border: 2px solid @brown;
   background-color: @white;
   width: 120px;
   height: 180px;
@@ -5007,7 +4991,7 @@ select#select-id {
 .wait-btn {
   background: @mid-blue;
   border: none;
-  background-color: #ffa337;
+  background-color: @orange;
 }
 
 .unwait-btn {
@@ -5016,7 +5000,7 @@ select#select-id {
 }
 
 .waitinglist-form input[type='submit'].wait-btn {
-  background-color: #ffa337;
+  background-color: @orange;
 }
 
 .waitinglist-form input[type='submit'] {
@@ -5036,7 +5020,7 @@ select#select-id {
   margin-bottom: 10px;
   background-color: rgb(252, 252, 252);
   border-radius: 5px;
-  border: 1px solid #ddd;
+  border: 1px solid @lighter-grey;
   border-bottom: 1px solid #ccc;
 }
 
@@ -5102,10 +5086,10 @@ li.edition-cover img:hover {
   border: 5px solid @link-blue;
 }
 li.selected img {
-  border: 5px solid #ffa337;
+  border: 5px solid @orange;
 }
 li.selected img:hover {
-  border: 5px solid #ffa337;
+  border: 5px solid @orange;
 }
 
 div.excerpt {
@@ -5128,7 +5112,7 @@ table.identifiers {
 }
 .identifiers td {
   color: @dark-grey;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid @lighter-grey;
   padding: 5px;
 }
 .identifiers.authors td {
@@ -5202,7 +5186,7 @@ table.history {
 table.history td {
   font-size: 0.6875em;
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, sans-serif;
-  color: #666;
+  color: @grey;
   border-bottom: 1px solid #e6e6e6;
 }
 table.history td.timestamp {
@@ -5249,7 +5233,7 @@ div#historyPosition {
   width: 880px;
   height: 85px;
   background-color: @light-yellow;
-  border: 5px solid #615132;
+  border: 5px solid @brown;
   border-bottom: 1px solid #d3ccb0;
   -webkit-border-top-right-radius: 15px;
   -webkit-border-top-left-radius: 15px;
@@ -5277,7 +5261,7 @@ div#historyClose a {
   padding: 10px 37px 10px 10px;
   text-decoration: none;
   text-transform: uppercase;
-  background: #615132 url('/images/historyClose.png') no-repeat 67px 9px;
+  background: @brown url('/images/historyClose.png') no-repeat 67px 9px;
 }
 div#historyCurrent {
   position: absolute;
@@ -5291,11 +5275,11 @@ div#historyCurrent {
 div#historyCurrent .revertTitle {
   font-size: 18px;
   padding-top: 25px;
-  color: #615132;
+  color: @brown;
 }
 div#historyCurrent .revertThis {
   font-size: 0.75em;
-  color: #666;
+  color: @grey;
 }
 div#historyRevert {
   position: absolute;
@@ -5324,7 +5308,7 @@ div#historyRevert a.revertSlideLink span.revertTitle {
 }
 div#historyRevert a.revertSlideLink span.revertThis {
   font-size: 12px;
-  color: #666;
+  color: @grey;
 }
 div#historyRevert form {
   display: block;
@@ -5337,7 +5321,7 @@ div#historyRevert form #because {
 }
 div#historyRevert form .opt {
   font-size: 10px;
-  color: #666;
+  color: @grey;
 }
 div#historyRevert form input[type='text'] {
   width: 235px;
@@ -5349,7 +5333,7 @@ div#historyRevert form input[type='submit'] {
 }
 div#historyRevert form a#revertSlideIn {
   font-size: 0.6875em;
-  color: #e44028;
+  color: @red;
   text-decoration: none;
 }
 div#historyExplore {
@@ -5380,7 +5364,7 @@ div#historyExplore #version {
   margin-left: 15px;
   white-space: nowrap;
   text-align: center;
-  color: #00636a;
+  color: @teal;
   width: 100px;
 }
 div#historyExplore #vtitle {
@@ -5395,7 +5379,7 @@ div#historyExplore #details {
 }
 div#historyExplore #author {
   font-size: 0.6875em;
-  color: #666;
+  color: @grey;
 }
 div#historyExplore #comment {
   font-size: 14px;
@@ -5570,7 +5554,7 @@ div#historyExplore a#historyFwd {
   padding-top: 19px;
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, sans-serif;
   font-weight: normal;
-  color: #666;
+  color: @grey;
   font-size: 0.6875em;
 }
 #resultsCovers h2 {
@@ -5581,7 +5565,7 @@ div#historyExplore a#historyFwd {
   text-align: center;
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, sans-serif;
   font-weight: normal;
-  color: #666;
+  color: @grey;
   font-size: 14px;
 }
 #coversLoading,
@@ -5633,7 +5617,7 @@ div#resultsCovers a {
   padding: 10px;
   text-align: center;
   float: left;
-  background: #dedede;
+  background: @lighter-grey;
   cursor: pointer;
   display: none;
 }
@@ -5657,7 +5641,7 @@ div#resultsCovers a {
   line-height: normal;
 }
 .Author {
-  color: #666;
+  color: @grey;
   font-style: italic;
   padding: 4px 4px 0;
   font-size: 11px;
@@ -5698,7 +5682,7 @@ div#editionsList li img {
 }
 span.resultTitle {
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, Arial, sans-serif;
-  color: #666;
+  color: @grey;
 }
 span.resultTitle h3.booktitle {
   display: inline;
@@ -5712,7 +5696,7 @@ span.resultTitle h3.booktitle {
 span.resultTitle .bookauthor,
 span.resultTitle .resultPublisher {
   font-size: 0.75em;
-  color: #666;
+  color: @grey;
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, sans-serif;
   font-weight: normal;
 }
@@ -5730,7 +5714,7 @@ span.actions {
 span.resultTitle span.resultType {
   font-size: 0.75em;
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, sans-serif;
-  color: #615132;
+  color: @brown;
 }
 span.actions a {
   display: block;
@@ -5815,7 +5799,7 @@ ul#siteSearch span.resultTitle {
   display: block;
   margin: 0 !important;
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, Arial, sans-serif;
-  color: #666;
+  color: @grey;
 }
 div.wide ul#siteSearch span.resultTitle {
   max-width: 850px;
@@ -5826,7 +5810,7 @@ div.narrow ul#siteSearch span.resultTitle {
 ul#siteSearch span.resultTitle .bookauthor,
 ul#siteSearch span.resultPublisher {
   font-size: 0.75em;
-  color: #666;
+  color: @grey;
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, sans-serif;
 }
 .bookauthor {
@@ -5891,7 +5875,7 @@ div#editionsCovers a {
   padding: 10px;
   margin: 0 20px 5px 0;
   text-align: center;
-  background: #dedede;
+  background: @lighter-grey;
   font-size: 0.875em;
   cursor: pointer;
   display: none;
@@ -5914,7 +5898,7 @@ div#editionsCovers a {
 }
 .Year {
   font-size: 0.6875em;
-  color: #615132;
+  color: @brown;
 }
 
 /* ADD IMAGE/COVER POP-UP */
@@ -5941,7 +5925,7 @@ div#throbber h3 {
   margin-top: 35px;
 }
 div.floaterHead {
-  background-color: #615132;
+  background-color: @brown;
   padding: 0 10px 10px 10px;
 }
 div.floaterHead h2 {
@@ -5964,7 +5948,7 @@ table.help {
 table.help th {
   font-size: 0.75em;
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, sans-serif;
-  color: #666;
+  color: @grey;
   border-bottom: 1px solid #e6e6e6;
   padding: 5px;
   vertical-align: top;
@@ -5973,7 +5957,7 @@ table.help th {
 table.help td {
   font-size: 0.75em;
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, sans-serif;
-  color: #666;
+  color: @grey;
   border-bottom: 1px solid #e6e6e6;
   padding: 5px;
   vertical-align: top;
@@ -5994,7 +5978,7 @@ a.floaterShut:hover {
   background-position: 0 -32px;
 }
 a.floaterClose {
-  color: #e44028;
+  color: @red;
   padding-left: 20px;
   font-size: 1em;
 }
@@ -6023,7 +6007,7 @@ div.popAlert {
   margin-bottom: 15px;
   background: url('/images/icons/icon_alert.png') no-repeat;
   font-size: 1.25em;
-  color: #e44028;
+  color: @red;
   text-align: center;
 }
 div.addfield {
@@ -6043,7 +6027,7 @@ div.coverFloat {
   text-align: left;
 }
 div.coverFloatHead {
-  background-color: #615132;
+  background-color: @brown;
   height: 16px;
   padding: 0 10px 10px 0;
   font-size: 1em;
@@ -6150,7 +6134,7 @@ form.floatform button[type='submit'] {
   width: auto !important;
 }
 a.floaterClose {
-  color: #e44028;
+  color: @red;
   font-size: 1em;
   padding-left: 20px;
 }
@@ -6202,7 +6186,7 @@ body#form .portlet {
   width: 70px;
   height: 70px;
   overflow: hidden;
-  border: 1px solid #dedede;
+  border: 1px solid @lighter-grey;
   border-radius: 6px;
   cursor: move;
 }
@@ -6228,7 +6212,7 @@ body#form .imageSaved {
   float: left;
   width: 300px;
   font-size: 0.75em;
-  color: #666;
+  color: @grey;
 }
 body#form .saved {
   background: url('/images/icons/icon_saved.png') no-repeat;
@@ -6348,7 +6332,7 @@ a.coverLook {
 #cboxContent {
   background: @white;
   padding: 0;
-  border: 10px solid #615132;
+  border: 10px solid @brown;
   border-radius: 12px;
   -webkit-box-shadow: 1px 3px 10px @black;
   box-shadow: 1px 3px 10px @black;
@@ -6448,7 +6432,7 @@ a.coverLook {
   padding: 8px 11px 3px;
   border: 1px solid #efefef;
   border-bottom: 3px solid #efefef;
-  color: #00636a;
+  color: @teal;
   text-transform: capitalize !important;
   font-size: 1.125em !important;
   margin: 0 3px;
@@ -6653,7 +6637,7 @@ table.changeHistory {
 table#pageHistory th,
 table.changeHistory th {
   border-bottom: 1px solid #e6e6e6;
-  color: #615132;
+  color: @brown;
   text-transform: uppercase !important;
   font-size: 0.6875em;
   padding: 10px;
@@ -6663,7 +6647,7 @@ table.changeHistory td {
   border-bottom: 1px solid #e6e6e6;
   padding: 10px;
   font-size: 0.75em;
-  color: #666;
+  color: @grey;
 }
 table#pageHistory td.number {
   text-align: right;
@@ -6687,9 +6671,9 @@ table#adminHistory {
   margin: 0 0 20px;
 }
 table#adminHistory th {
-  background-color: @light-grey;
+  background-color: @lightest-grey;
   border-bottom: 1px solid #cbc4a7;
-  color: #666;
+  color: @grey;
   font-size: 0.8675em;
   font-weight: 700;
   padding: 10px;
@@ -6720,12 +6704,12 @@ div#adminTwitter div.tweet_copy {
 #flickr_badge_source_txt {
   padding: 0;
   font: 0.6875em Arial, Helvetica, Sans serif;
-  color: #666666;
+  color: @grey;
 }
 #flickr_badge_icon {
   display: block !important;
   margin: 0 !important;
-  border: 1px solid rgb(0, 0, 0) !important;
+  border: 1px solid @black !important;
 }
 #flickr_icon_td {
   padding: 0 5px 0 0 !important;
@@ -6734,7 +6718,7 @@ div#adminTwitter div.tweet_copy {
   text-align: center !important;
 }
 .flickr_badge_image img {
-  border: 1px solid black !important;
+  border: 1px solid @black !important;
 }
 #flickr_www {
   display: block;
@@ -6761,7 +6745,7 @@ div#adminTwitter div.tweet_copy {
 #flickr_badge_source {
   padding: 0 !important;
   font: 0.6875em Arial, Helvetica, Sans serif !important;
-  color: #666666 !important;
+  color: @grey !important;
 }
 
 /* TWITTER FEED */
@@ -6787,7 +6771,7 @@ div.tweet_copy {
   float: left;
 }
 div.tweet_date a {
-  color: #666;
+  color: @grey;
   text-decoration: none;
 }
 .twtr-hd {
@@ -6795,8 +6779,8 @@ div.tweet_date a {
 }
 
 div.grippie {
-  background: @light-grey url('/images/grippie.png') no-repeat scroll center 2px;
-  border-color: #ddd;
+  background: @lightest-grey url('/images/grippie.png') no-repeat scroll center 2px;
+  border-color: @lighter-grey;
   border-style: solid;
   border-width: 0 1px 1px;
   cursor: s-resize;
@@ -6811,7 +6795,7 @@ div.grippie {
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, Arial, sans-serif;
   font-size: 0.6875em;
   text-transform: uppercase;
-  color: #615132;
+  color: @brown;
   font-weight: bold;
 }
 
@@ -6819,10 +6803,10 @@ h3.Question {
   font-family: Georgia, 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
   font-size: 1.2em;
   font-weight: normal;
-  color: #615132;
+  color: @brown;
   margin-top: 10px;
   padding-top: 10px;
-  border-top: 1px dotted #ddd;
+  border-top: 1px dotted @lighter-grey;
 }
 
 /* CHARTING */
@@ -6849,7 +6833,7 @@ h3.Question {
   -o-transform: rotate(-90deg);
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   font-size: 10px;
-  color: #748d36;
+  color: @olive;
   text-transform: uppercase;
 }
 .chartXaxis {
@@ -6859,7 +6843,7 @@ h3.Question {
   width: 100%;
   text-align: center;
   font-size: 10px;
-  color: #748d36;
+  color: @olive;
   text-transform: uppercase;
 }
 
@@ -6875,14 +6859,14 @@ div.merge div.entry {
   padding: 10px 0;
   float: left;
   clear: right;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid @lighter-grey;
 }
 div.merge div.header {
   width: 100%;
   padding: 0 !important;
   float: left;
   clear: right;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid @lighter-grey;
 }
 div.merge div.header div {
   padding: 5px;
@@ -6908,7 +6892,7 @@ div.merge div.record ul {
   margin-bottom: 0 !important;
 }
 div.merge div.record ul li {
-  color: #666 !important;
+  color: @grey !important;
   font-size: 0.75em;
 }
 div.merge div.record .name {
@@ -6930,12 +6914,12 @@ div.merge div.record label {
   width: 710px;
 }
 div.merge div.record .metaDate {
-  color: #615132;
+  color: @brown;
   font-size: 0.8125em;
   padding-left: 10px;
 }
 div.merge div.record .metaSubject {
-  color: #666;
+  color: @grey;
   font-size: 0.8125em;
   display: block;
 }
@@ -7078,7 +7062,7 @@ body#plain .borrow span.contributor {
 }
 body#plain .borrow div.date {
   font-size: 0.75em;
-  color: #666;
+  color: @grey;
 }
 body#plain .borrow span.expires {
   font-size: 1em;
@@ -7099,7 +7083,7 @@ body#plain .borrow table {
 }
 #borrowTable table div.date {
   font-size: 0.75em;
-  color: #666;
+  color: @grey;
 }
 #borrowTable table td.expires {
   text-align: center;
@@ -7140,13 +7124,13 @@ body#plain #borrowTable table th {
 }
 body#plain #borrowTable table th.titles {
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, Arial, sans-serif;
-  color: #00636a;
+  color: @teal;
   font-weight: 600;
   font-size: 1.125em;
 }
 body#plain #borrowTable table th.expires {
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, Arial, sans-serif;
-  color: #615132;
+  color: @brown;
   font-weight: 600;
   font-size: 0.6875em;
   text-transform: uppercase;
@@ -7173,7 +7157,7 @@ body#admin #borrowTable table th {
   vertical-align: bottom;
   padding-bottom: 10px;
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, Arial, sans-serif;
-  color: #615132;
+  color: @brown;
   font-weight: 600;
   font-size: 0.6875em;
   text-transform: uppercase;
@@ -7236,7 +7220,7 @@ form#borrowbook fieldset table td {
   font-size: 0.8125em;
 }
 form#borrowbook fieldset.online table td {
-  color: #615132;
+  color: @brown;
 }
 form#borrowbook fieldset table td.icon {
   padding-right: 10px;
@@ -7258,7 +7242,7 @@ form#borrowbook label {
   margin-bottom: 25px;
   background-color: #f2f0e7;
   font-size: 0.6875em;
-  color: #666;
+  color: @grey;
   cursor: pointer;
   background-position: 20px 20px;
   background-repeat: no-repeat;
@@ -7281,10 +7265,10 @@ form#borrowbook label:hover {
   background-color: #fffdf7;
 }
 form#borrowbook label:hover strong {
-  color: #748d36;
+  color: @olive;
 }
 div.inLibrary {
-  background: #35672e url('/images/icons/icon_thumbsup-@white.png') 8px 50%
+  background: @dark-green url('/images/icons/icon_thumbsup-@white.png') 8px 50%
     no-repeat;
   padding: 8px 8px 8px 40px;
   font-size: 0.75em;
@@ -7326,7 +7310,7 @@ p#postBorrowList {
 /* LISTS */
 #listTools ul {
   font-size: 0.75em;
-  color: #666;
+  color: @grey;
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, Arial, sans-serif;
   margin: 0 0 20px 0 !important;
 }
@@ -7412,7 +7396,7 @@ ul#listResults li span.detail {
 }
 ul#listResults li span.editions {
   display: block;
-  color: #666;
+  color: @grey;
   font-size: 0.75em;
 }
 ul#listResults li span.editions strong {
@@ -7424,43 +7408,43 @@ ul#listResults li span.type {
 ul#listResults li span.meta {
   font-size: 0.75em;
   display: block;
-  color: #666;
+  color: @grey;
 }
 ul#listResults li span.time {
   font-size: 0.75em;
   display: block;
-  color: #999;
+  color: @light-grey;
 }
 ul#listResults li span.time span {
   font-weight: 700;
-  color: #748d36;
+  color: @olive;
 }
 ul#listResults li span.author {
-  background-color: #00636a;
+  background-color: @teal;
   color: @white;
   padding: 1px;
   opacity: 0.5;
 }
 ul#listResults li span.subject {
-  background-color: #ffa337;
+  background-color: @orange;
   color: @white;
   padding: 1px;
   opacity: 0.5;
 }
 ul#listResults li span.place {
-  background-color: #e44028;
+  background-color: @red;
   color: @white;
   padding: 1px;
   opacity: 0.5;
 }
 ul#listResults li span.book {
-  background-color: #35672e;
+  background-color: @dark-green;
   color: @white;
   padding: 1px;
   opacity: 0.5;
 }
 ul#listResults li span.people {
-  background-color: #615132;
+  background-color: @brown;
   color: @white;
   padding: 1px;
   opacity: 0.5;
@@ -7493,7 +7477,7 @@ ul#listResults li span.listDelete a:hover span {
 
 ul.listLists span {
   display: block;
-  color: #666;
+  color: @grey;
 }
 ul.listLists {
   margin: 0px;
@@ -7507,7 +7491,7 @@ ul.listLists li {
   display: -webkit-flex;
   display: flex;
   background-color: #fcfcfc;
-  border-bottom: 1px solid @light-grey;
+  border-bottom: 1px solid @lightest-grey;
 }
 ul.listLists li .image {
   width: 42px;
@@ -7557,7 +7541,7 @@ div#listsWork h3 {
 div#listsWork h4 {
   font-size: 1em;
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, Arial, sans-serif;
-  color: #00636a;
+  color: @teal;
   font-weight: 600;
   margin: 0 0 10px 0;
   padding: 0;
@@ -7585,7 +7569,7 @@ div#listsWork div.dropit {
   min-height: 45px;
 }
 div#listsWork div.dropit p.listed {
-  color: #666;
+  color: @grey;
   font-size: 0.8125em;
   padding: 0 0 0 42px;
   margin: 0 0 5px;
@@ -7639,7 +7623,7 @@ div#listsWork div.dropper div.dropdown p {
   font-size: 0.875em;
   padding-left: 0;
   margin-bottom: 5px;
-  color: #666;
+  color: @grey;
 }
 div#listsWork div.dropper div.dropdown p span {
   font-size: 0.8125em;
@@ -7648,7 +7632,7 @@ div#listsWork div.dropper div.dropdown p a {
   font-size: 0.875em;
 }
 div#listsWork div.dropper div.dropdown {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid @lighter-grey;
   display: none;
   padding-top: 10px;
 }
@@ -7720,7 +7704,7 @@ div#subjectLists div.dropit {
   min-height: 50px;
 }
 div#subjectLists div.dropit p.listed {
-  color: #666;
+  color: @grey;
   font-size: 0.8125em;
   padding: 0 0 0 42px;
   margin: 0 0 5px;
@@ -7762,7 +7746,7 @@ div#subjectLists div.dropper h3 {
 div#subjectLists div.dropper div.dropdown p {
   font-size: 0.875em;
   margin: 0 0 5px 0;
-  color: #666;
+  color: @grey;
 }
 div#subjectLists div.dropper div.dropdown p span {
   font-size: 0.8125em;
@@ -7776,7 +7760,7 @@ div#subjectLists div.dropper div.dropdown {
 }
 
 #widget-add div.dropper div.dropdown p.create {
-  border-top: 1px solid @light-grey;
+  border-top: 1px solid @lightest-grey;
   padding: 5px 10px;
   text-decoration: none;
   font-weight: bold;
@@ -7793,7 +7777,7 @@ div.dropper div.dropdown p.create a {
   text-align: left;
   font-weight: normal;
   font-size: 0.6875em;
-  color: #615132;
+  color: @brown;
   padding: 0 0 10px 0;
   border-left: none;
   border-right: none;
@@ -7830,7 +7814,7 @@ div.dropper div.dropdown p.create a {
 .lists table#editions .published {
   font-size: 0.6875em;
   font-weight: normal;
-  color: #666;
+  color: @grey;
 }
 
 #listsDisplay h3 {
@@ -7874,7 +7858,7 @@ div.dropper div.dropdown p.create a {
 #listsDisplay ul#listResults span.editions {
   margin-top: 0;
   font-size: 0.6875em;
-  color: #666;
+  color: @grey;
   padding-top: 3px;
   padding-bottom: 3px;
 }
@@ -7933,7 +7917,7 @@ body#user #description p {
 }
 #lists .listEntry .name {
   font-size: 0.6875em;
-  color: #666;
+  color: @grey;
 }
 #lists .listEntry .name a.title {
   font-weight: bold;
@@ -7947,7 +7931,7 @@ body#user #description p {
 }
 #lists .listEntry .meta {
   font-size: 0.6875em;
-  color: #666;
+  color: @grey;
   line-height: 1.5em;
   margin: 3px 0;
 }
@@ -7962,13 +7946,13 @@ body#user #description p {
 
 /* LIBRARIES */
 .branches th {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid @lighter-grey;
   font-size: 0.625em;
   font-weight: 700;
   padding: 4px;
 }
 .branches td {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid @lighter-grey;
   vertical-align: top;
   font-size: 0.75em;
   padding: 4px;
@@ -8032,21 +8016,21 @@ body#user #description p {
   font-family: 'Lucida Grande', 'Verdana', 'Arial', sans-serif;
   font-size: 0.6875em;
   line-height: 1.5em;
-  color: #666;
+  color: @grey;
   display: inline;
 }
 #contentBody.map div#mapLegendBody span {
   font-family: 'Lucida Grande', 'Verdana', 'Arial', sans-serif;
   font-size: 0.8125em;
   line-height: 1.5em;
-  color: #666;
+  color: @grey;
   list-style-type: none;
   display: block;
   float: left;
 }
 #contentBody.map div#mapLegendBody span.this {
   font-weight: 700;
-  color: #748d36;
+  color: @olive;
 }
 #contentBody.map .olControlAttribution {
   bottom: 10px !important;
@@ -8109,7 +8093,7 @@ span.actions a span.checked-out {
   cursor: pointer;
   display: inline;
   border: 1px solid @mid-blue;
-  color: #95a865;
+  color: @light-olive; // this is the only place this color is used. refactor?
 }
 .page-banner a.button {
   text-decoration: none;
@@ -8133,6 +8117,7 @@ span.actions a span.checked-out {
   position: relative;
   padding-left: 1.25em;
 }
+
 .box-shadow-menu:before {
   content: '';
   position: absolute;
@@ -8140,9 +8125,9 @@ span.actions a span.checked-out {
   top: 0.25em;
   width: 1em;
   height: 0.15em;
-  background: black;
-  -webkit-box-shadow: 0 0.25em 0 0 black, 0 0.5em 0 0 black;
-  box-shadow: 0 0.25em 0 0 black, 0 0.5em 0 0 black;
+  background: @black;
+  -webkit-box-shadow: 0 0.25em 0 0 @black, 0 0.5em 0 0 @black;
+  box-shadow: 0 0.25em 0 0 @black, 0 0.5em 0 0 @black;
 }
 
 .dropclick {
@@ -8201,7 +8186,7 @@ span.actions a span.checked-out {
   color: @dark-grey;
   background: #ececec;
   border: 2px solid #f3f3f3;
-  border-right: 1px solid #ddd;
+  border-right: 1px solid @lighter-grey;
 }
 
 .log-work button[type='submit'].unactivated {
@@ -8383,7 +8368,7 @@ div.tools-override div.dropper {
 
 .Tools .check-availability {
   padding: 10px;
-  border-top: 1px solid @light-grey;
+  border-top: 1px solid @lightest-grey;
   border-radius: 3px;
 }
 
@@ -8402,7 +8387,7 @@ div.tools-override div.dropper {
 
 Tools .check-availability a {
   font-size: 1.3em;
-  color: #036;
+  color: @dark-blue;
 }
 
 #read.panel {
@@ -8470,7 +8455,7 @@ p.print-disabled-download {
 }
 
 .related-books {
-  border-top: 1px solid @light-grey;
+  border-top: 1px solid @lightest-grey;
   margin-top: 15px;
   clear: both;
 }
@@ -8489,7 +8474,7 @@ p.print-disabled-download {
   text-align: left;
   font-size: 0.8em;
   padding: 10px;
-  border-bottom: 1px solid @light-grey;
+  border-bottom: 1px solid @lightest-grey;
 }
 
 .read-statuses form:last-child button.nostyle-btn {
@@ -8502,7 +8487,7 @@ p.print-disabled-download {
 }
 
 .read-statuses {
-  border-bottom: 1px solid @light-grey;
+  border-bottom: 1px solid @lightest-grey;
 }
 
 ul#myreads-paginator {
@@ -8519,7 +8504,7 @@ ul#myreads-paginator li {
   list-style-type: none;
   color: @black;
   padding: 7px;
-  border: 1px solid #ddd;
+  border: 1px solid @lighter-grey;
   margin-right: 10px;
   background-color: @white;
 }
@@ -8553,7 +8538,7 @@ ul#myreads-paginator li.selected:hover {
 }
 
 .mybooks {
-  border-top: 1px solid @light-grey;
+  border-top: 1px solid @lightest-grey;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -8563,7 +8548,7 @@ ul#myreads-paginator li.selected:hover {
 
 .mybooks-menu {
   padding-right: 10px;
-  border-right: 1px solid @light-grey;
+  border-right: 1px solid @lightest-grey;
   max-width: 200px;
 }
 
@@ -8577,7 +8562,7 @@ ul#myreads-paginator li.selected:hover {
 .mybooks-menu ul.user-lists {
   padding: 10px;
   padding-left: 0px;
-  border-bottom: 1px solid @light-grey;
+  border-bottom: 1px solid @lightest-grey;
 }
 
 .mybooks-menu ul.user-lists {
