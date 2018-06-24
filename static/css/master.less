@@ -2271,7 +2271,7 @@ div.siteSearch.darker {
   box-shadow: 1px 1px 10px @dark-grey;
 }
 body#user div.siteSearch.darker {
-  background-color: #f3f3f3;
+  background-color: darken(@white, 5);
   padding-right: 22px;
 }
 body#admin div.siteSearch.darker {
@@ -2685,7 +2685,7 @@ div#editionBuy {
   right: 0;
   padding: 15px;
   background-color: @white;
-  border: 1px solid #d3ccb0;
+  border: 1px solid @beige-two;
   border-radius: 8px;
   -webkit-box-shadow: 1px 1px 10px @dark-grey;
   box-shadow: 1px 1px 10px @dark-grey;
@@ -3107,7 +3107,7 @@ div#headerNav li.second {
   margin-right: 99px !important;
 }
 body#user div#headerNav ul.links li {
-  border-top: 1px solid #d3ccb0;
+  border-top: 1px solid @beige-two;
 }
 body#admin div#headerNav ul.links li {
   border-top: 1px solid #c1c1c1;
@@ -3213,7 +3213,7 @@ div#headerLogin {
   padding: 0;
   text-align: left;
   z-index: 10000;
-  background-color: #f3f3f3;
+  background-color: darken(@white, 5);
   display: none;
   min-width: 70px;
 }
@@ -3255,7 +3255,7 @@ div#headerLogin {
   height: 100%;
   overflow: auto;
   background-color: @black;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: fade(@black, 40);
 }
 
 .modal-content {
@@ -3718,10 +3718,10 @@ div.contentBody.gradient {
     linear,
     left top,
     left bottom,
-    from(#f4f4f4),
+    from(darken(@white,4)),
     to(@white)
   );
-  background: -moz-linear-gradient(top, #f4f4f4, @white);
+  background: -moz-linear-gradient(top, darken(@white,4), @white);
   padding-top: 20px;
 }
 div#content div#contentLists {
@@ -5234,7 +5234,7 @@ div#historyPosition {
   height: 85px;
   background-color: @light-yellow;
   border: 5px solid @brown;
-  border-bottom: 1px solid #d3ccb0;
+  border-bottom: 1px solid @beige-two;
   -webkit-border-top-right-radius: 15px;
   -webkit-border-top-left-radius: 15px;
   -moz-border-radius-topright: 15px;
@@ -6723,7 +6723,7 @@ div#adminTwitter div.tweet_copy {
   display: block;
   padding: 0 10px 0 10px !important;
   font: 0.6875em Arial, Helvetica, Sans serif !important;
-  color: #3993ff !important;
+  color: @flickr-brand-blue !important;
 }
 #flickr_badge_uber_wrapper a:hover,
 #flickr_badge_uber_wrapper a:link,
@@ -6731,7 +6731,7 @@ div#adminTwitter div.tweet_copy {
 #flickr_badge_uber_wrapper a:visited {
   text-decoration: none !important;
   background: inherit !important;
-  color: #3993ff;
+  color: @flickr-brand-blue;
 }
 #flickr_badge_wrapper {
   margin: 0 auto;
@@ -6969,8 +6969,7 @@ body#plain div.nav {
 body#plain div.message {
   padding: 25px 25px 25px 55px;
   margin-bottom: 50px;
-  background: @light-yellow url('/images/icons/icon_lock-msg.png') no-repeat
-    15px 50%;
+  background: @light-yellow url('/images/icons/icon_lock-msg.png') no-repeat 15px 50%;
 }
 body#plain div.message h2 {
   font-weight: normal;
@@ -7006,20 +7005,17 @@ body#plain p.help {
 
 /* BORROWING */
 body#plain div.alert {
-  background: @light-yellow url('/images/icons/icon_alert-gold.png') no-repeat
-    15px 50% !important;
+  background: @light-yellow url('/images/icons/icon_alert-gold.png') no-repeat 15px 50% !important;
   margin-bottom: 10px;
   margin-top: 20px;
 }
 body#plain div.stop {
-  background: @light-yellow url('/images/icons/icon_stop.png') no-repeat 15px
-    50% !important;
+  background: @light-yellow url('/images/icons/icon_stop.png') no-repeat 15px 50% !important;
   margin-bottom: 45px;
   margin-top: 20px;
 }
 body#plain div.info {
-  background: @light-yellow url('/images/icons/icon_info.png') no-repeat 17px
-    50% !important;
+  background: @light-yellow url('/images/icons/icon_info.png') no-repeat 17px 50% !important;
   margin-bottom: 45px;
   margin-top: 20px;
 }
@@ -7033,7 +7029,7 @@ body#plain div.navBorrow {
 }
 body#plain .panel {
   background-color: @white;
-  border: 1px solid #d3ccb0;
+  border: 1px solid @beige-two;
   padding: 30px 20px;
   margin-bottom: 20px;
 }
@@ -7071,7 +7067,7 @@ body#plain .borrow table {
 }
 
 #borrowTable table td {
-  border-bottom: 1px solid #c7c3b3;
+  border-bottom: 1px solid @beige-three;
   vertical-align: top;
 }
 #borrowTable table td.cover {
@@ -7117,7 +7113,7 @@ body#plain #borrowTable table {
   margin-bottom: 20px;
 }
 body#plain #borrowTable table th {
-  border-bottom: 1px solid #c7c3b3;
+  border-bottom: 1px solid @beige-three;
   vertical-align: bottom;
   padding-bottom: 10px;
 }
@@ -7152,7 +7148,7 @@ body#admin #borrowTable table {
 }
 body#user #borrowTable table th,
 body#admin #borrowTable table th {
-  border-bottom: 1px solid #c7c3b3;
+  border-bottom: 1px solid @beige-three;
   vertical-align: bottom;
   padding-bottom: 10px;
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, Arial, sans-serif;
@@ -7239,7 +7235,7 @@ form#borrowbook label {
   height: 50px;
   padding: 20px 0 0 50px;
   margin-bottom: 25px;
-  background-color: #f2f0e7;
+  background-color: @cream;
   font-size: 0.6875em;
   color: @grey;
   cursor: pointer;
@@ -7248,7 +7244,7 @@ form#borrowbook label {
   background-image: url('/images/icons/icon_download-borrow.png');
 }
 form#borrowbook fieldset.online label {
-  background-color: #fffdf7;
+  background-color: @off-white;
   background-image: url('/images/icons/icon_read-borrow.png');
 }
 form#borrowbook label strong {
@@ -7261,14 +7257,13 @@ form#borrowbook input {
   display: none;
 }
 form#borrowbook label:hover {
-  background-color: #fffdf7;
+  background-color: @off-white;
 }
 form#borrowbook label:hover strong {
   color: @olive;
 }
 div.inLibrary {
-  background: @dark-green url('/images/icons/icon_thumbsup-@white.png') 8px 50%
-    no-repeat;
+  background: @dark-green url('/images/icons/icon_thumbsup-@white.png') 8px 50% no-repeat;
   padding: 8px 8px 8px 40px;
   font-size: 0.75em;
   color: @white;
@@ -8184,7 +8179,7 @@ span.actions a span.checked-out {
 .log-work button[type='submit'].activated {
   color: @dark-grey;
   background: @lightest-grey;
-  border: 2px solid #f3f3f3;
+  border: 2px solid darken(@white, 5);
   border-right: 1px solid @lighter-grey;
 }
 
@@ -8427,7 +8422,7 @@ p.print-disabled-download {
   margin-left: 70px;
   height: 20px;
   padding: 2px;
-  background: rgba(255, 255, 255, 0.58);
+  background: fade(@white, 58);
   border-radius: 15px;
   margin-top: 3px;
 }
