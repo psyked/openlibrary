@@ -742,7 +742,7 @@ h6 {
 }
 span.link {
   font-size: 12px;
-  color: #929292;
+  color: @light-grey;
   font-weight: normal !important;
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, sans-serif;
   white-space: nowrap;
@@ -850,7 +850,7 @@ input[type='text'],
 select,
 textarea {
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, sans-serif;
-  color: #454545;
+  color: @darker-grey;
   font-size: 0.875em;
 }
 input[type='text'] {
@@ -964,7 +964,7 @@ header#header-bar {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
-  background: #fafafa;
+  background: @white;
   border-radius: 0.3em;
   -webkit-box-flex: 1;
   -ms-flex: 1 0 0%;
@@ -1003,7 +1003,7 @@ header#header-bar .search-component .search-bar-submit {
   font-weight: 500;
   border: 0 none;
   outline: none;
-  background: #fafafa;
+  background: @white;
   color: @light-grey;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -1024,7 +1024,7 @@ header#header-bar .search-component .search-dropdown {
 }
 
 header#header-bar .search-component .search-dropdown ul.search-results {
-  background: #fcfcfc;
+  background: @white;
   border-top-left-radius: 0.3em;
   border-top-right-radius: 0.3em;
 }
@@ -1140,7 +1140,7 @@ header#header-bar .search-component .search-bar-advanced-btn {
   background-size: cover;
   width: 45px;
   height: 45px;
-  background-color: #aaa;
+  background-color: @light-mid-grey;
   border-radius: 3px;
 }
 
@@ -1228,13 +1228,13 @@ header#header-bar .search-component .search-facet {
   border-top-left-radius: 3px;
   border-bottom-right-radius: 0px;
   border-top-right-radius: 0px;
-  background-color: rgba(226, 220, 197, 0.32);
+  background-color: fade(@beige, 32);
   border: none;
   border-right: 1px solid @lighter-grey;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   font-weight: 500;
-  color: #888;
+  color: @grey;
   font-size: 0.8em;
   padding-top: 13px;
   padding-left: 10px;
@@ -1251,7 +1251,7 @@ header#header-bar .search-component .search-bar-component {
   display: inline-block;
   border: 1px solid #babbad;
   border-radius: 0.3em;
-  background-color: #fafafa;
+  background-color: @white;
   z-index: 999;
   position: relative;
 }
@@ -1397,7 +1397,7 @@ header#header-bar ul.dropdown-menu li a {
 }
 
 header#header-bar ul.navigation-component li ul.dropdown-menu li a {
-  color: #444;
+  color: @darker-grey;
 }
 
 header#header-bar ul.navigation-component .more-menu {
@@ -1504,7 +1504,7 @@ a.ghost-btn {
 }
 
 .heart {
-  color: #ff787c;
+  color: @heart-color;
   font-size: 1.2em;
 }
 
@@ -2522,7 +2522,7 @@ body#edit div#content {
 
 body#edit .formElement {
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, sans-serif;
-  color: #454545;
+  color: @darker-grey;
 }
 body#edit .label {
   padding: 10px 0 5px;
@@ -2738,7 +2738,7 @@ div#editInfo {
 
 .linkButton {
   border-radius: 5px;
-  background: #fcfcfc;
+  background: @white;
   padding: 10px;
   color: @dark-grey;
 }
@@ -2757,7 +2757,7 @@ a.linkButton {
 .shareLinks .share-source {
   font-size: 0.8em;
   text-align: center;
-  color: #888;
+  color: @grey;
 }
 
 #content .shareLinks ul {
@@ -3264,7 +3264,7 @@ div#headerLogin {
   border-radius: 10px;
   background-color: #fefefe;
   margin: 150px auto 15% auto;
-  border: 1px solid #888;
+  border: 1px solid @grey;
   width: 350px;
 }
 
@@ -3316,8 +3316,8 @@ div#headerLogin {
 .modal-icon img {
   width: 60px;
   border-radius: 50%;
-  -webkit-box-shadow: inset 0 1px 0 0 hsla(0, 0%, 100%, 0.1);
-  box-shadow: inset 0 1px 0 0 hsla(0, 0%, 100%, 0.1);
+  -webkit-box-shadow: inset 0 1px 0 0 fade(@white, 10);
+  box-shadow: inset 0 1px 0 0 fade(@white, 10);
   -webkit-box-shadow: 0px 0px 1px @black;
   box-shadow: 0px 0px 1px @black;
   border: 3px solid @white;
@@ -3386,7 +3386,7 @@ hr.forgot-padding {
 }
 
 .modal-x {
-  color: #aaa;
+  color: @light-mid-grey;
   float: right;
   font-size: 20px;
   position: relative;
@@ -3404,7 +3404,7 @@ hr.forgot-padding {
 .modal-body {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  background-color: #f7f7f7;
+  background-color: @lightest-grey;
   padding: 20px;
   border-top: 1px solid @white;
   -webkit-transition: all 0.35s cubic-bezier(0.52, 0, 0.27, 1.01);
@@ -3484,7 +3484,7 @@ a.generic-button {
   color: @white !important;
   padding: 13px 10px;
   border-radius: 3px;
-  border: 1px solid #bf3622;
+  border: 1px solid @dark-red;
 }
 
 .modal-form button {
@@ -3492,16 +3492,16 @@ a.generic-button {
   border: none;
   outline: none;
   background: @mid-blue;
-  background-image: -webkit-linear-gradient(top, @mid-blue, #2980b9);
-  background-image: -o-linear-gradient(top, @mid-blue, #2980b9);
+  background-image: -webkit-linear-gradient(top, @mid-blue, @mid-blue-highlight);
+  background-image: -o-linear-gradient(top, @mid-blue, @mid-blue-highlight);
   background-image: -webkit-gradient(
     linear,
     left top,
     left bottom,
     from(@mid-blue),
-    to(#2980b9)
+    to(@mid-blue-highlight)
   );
-  background-image: linear-gradient(to bottom, @mid-blue, #2980b9);
+  background-image: linear-gradient(to bottom, @mid-blue, @mid-blue-highlight);
   border-radius: 5px;
   font-family: Arial;
   color: @white;
@@ -3511,17 +3511,17 @@ a.generic-button {
 }
 
 .modal-form button:hover {
-  background: #3cb0fd;
-  background-image: -webkit-linear-gradient(top, #3cb0fd, @mid-blue);
-  background-image: -o-linear-gradient(top, #3cb0fd, @mid-blue);
+  background: @mid-blue-highlight-hover;
+  background-image: -webkit-linear-gradient(top, @mid-blue-highlight-hover, @mid-blue);
+  background-image: -o-linear-gradient(top, @mid-blue-highlight-hover, @mid-blue);
   background-image: -webkit-gradient(
     linear,
     left top,
     left bottom,
-    from(#3cb0fd),
+    from(@mid-blue-highlight-hover),
     to(@mid-blue)
   );
-  background-image: linear-gradient(to bottom, #3cb0fd, @mid-blue);
+  background-image: linear-gradient(to bottom, @mid-blue-highlight-hover, @mid-blue);
   text-decoration: none;
   cursor: pointer;
 }
@@ -4237,7 +4237,7 @@ div#searchResults li img {
 
 li.searchResultItem {
   list-style-type: none;
-  background-color: #fafafa;
+  background-color: @white;
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 3px;
@@ -4326,7 +4326,7 @@ a.cta-btn {
 }
 
 .searchResultItemCTA-lending .borrow_unavailable .badge {
-  background-color: #e6881a;
+  background-color: @orange-two;
   padding: 4px 7px;
   border-radius: 5px;
   font-size: 0.7em;
@@ -4345,7 +4345,7 @@ a.cta-btn {
 }
 
 .print-disabled-only {
-  background-color: #c43bfc;
+  background-color: @purple;
 }
 
 .check-book-availability {
@@ -4356,7 +4356,7 @@ a.cta-btn {
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, Arial, sans-serif;
   font-size: 0.7em;
   margin-bottom: -1.5em;
-  color: #757373;
+  color: @grey;
   padding: 0.2em;
 }
 
@@ -4569,7 +4569,7 @@ h2.work-subtitle {
 
 h2.edition-title {
   margin: 7px 0px 0px 0px;
-  color: #888;
+  color: @grey;
   font-family: Georgia, 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
   font-weight: normal;
   font-size: 1.1em;
@@ -4995,7 +4995,7 @@ select#select-id {
 }
 
 .unwait-btn {
-  background: #aaa;
+  background: @light-mid-grey;
   border: none;
 }
 
@@ -5018,7 +5018,7 @@ select#select-id {
   margin-left: 35px;
   padding: 10px;
   margin-bottom: 10px;
-  background-color: rgb(252, 252, 252);
+  background-color: @white;
   border-radius: 5px;
   border: 1px solid @lighter-grey;
   border-bottom: 1px solid @mid-grey;
@@ -7484,7 +7484,7 @@ ul.listLists li {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  background-color: #fcfcfc;
+  background-color: @white;
   border-bottom: 1px solid @lightest-grey;
 }
 ul.listLists li .image {
@@ -7638,7 +7638,7 @@ div.dropper div.dropdown div.reading-lists p.reading-list-title {
   font-size: 0.8em;
 }
 div.dropper div.dropdown div.my-lists {
-  background: #fcfcfc;
+  background: @white;
   max-height: 250px;
   overflow-y: scroll;
   padding: 10px 15px;
@@ -7934,7 +7934,7 @@ body#user #description p {
 .snipHL {
   opacity: 0.2;
   filter: alpha(opacity=20);
-  background-color: #00f;
+  background-color: @blue;
   position: absolute;
 }
 
@@ -8073,10 +8073,10 @@ span.actions a span.checked-out {
 .page-banner-black .cta {
   padding: 4px 8px;
   border-radius: 5px;
-  border: 1px solid #555;
+  border: 1px solid lighten(@black, 33.4);
   font-weight: 500;
   text-decoration: none;
-  background: #464646;
+  background: lighten(@black, 27.6);
   margin: 0px 5px;
 }
 
@@ -8139,7 +8139,7 @@ span.actions a span.checked-out {
 }
 
 .dropclick-unactivated {
-  background-color: rgb(52, 160, 70);
+  background-color: @green-five;
 }
 
 .dropclick h3 {
@@ -8185,13 +8185,13 @@ span.actions a span.checked-out {
 
 .log-work button[type='submit'].unactivated {
   color: @white;
-  background: rgb(62, 169, 79);
-  border: 2px solid #41a552;
-  border-right: 1px solid rgb(67, 152, 80);
+  background: @green-three;
+  border: 2px solid @green-four;
+  border-right: 1px solid @green-two;
 }
 
 .log-work span.activated-check {
-  color: rgb(33, 136, 50);
+  color: @green;
   margin-right: 2px;
 }
 
@@ -8654,15 +8654,15 @@ ul#myreads-paginator li.selected:hover {
 .reading-log-lite button {
   border-radius: 4px;
   color: @white;
-  background: rgb(62, 169, 79);
-  border: 2px solid #41a552;
-  border-right: 1px solid rgb(67, 152, 80);
+  background: @green-three;
+  border: 2px solid @green-four;
+  border-right: 1px solid @green-two;
   height: 2.5em;
   padding: 0px 10px;
 }
 
 .reading-log-lite span.activated-check {
-  color: rgb(33, 136, 50);
+  color: @green;
   margin-right: 2px;
 }
 
