@@ -1249,7 +1249,7 @@ header#header-bar .search-component .search-facet select {
 
 header#header-bar .search-component .search-bar-component {
   display: inline-block;
-  border: 1px solid #babbad;
+  border: 1px solid @dark-beige;
   border-radius: 0.3em;
   background-color: @white;
   z-index: 999;
@@ -1354,15 +1354,15 @@ header#header-bar ul.navigation-component li .navigation-dropdown-component {
 
 header#header-bar .dropdown-menu {
   text-align: left;
-  background-color: #f3f1e9;
-  border: 1px solid #babbad;
+  background-color: @light-beige;
+  border: 1px solid @dark-beige;
   border-radius: 3px;
   cursor: pointer;
 }
 
 header#header-bar .dropdown-menu li {
   padding: 10px;
-  border-bottom: 1px solid #dfe0ca;
+  border-bottom: 1px solid @beige-two;
   padding-right: 20px;
 }
 
@@ -1714,7 +1714,7 @@ header#header-bar .expand .search-bar-input input {
     display: none;
   }
   header#header-bar .logo-component {
-    /* border-right: 1px solid #babbad; */
+    /* border-right: 1px solid @dark-beige; */
     padding-right: 15px;
   }
   header#header-bar .logo-component .logo-icon {
@@ -1731,7 +1731,7 @@ header#header-bar .expand .search-bar-input input {
   }
   header#header-bar .navigation-component .dropdown-menu {
     border-radius: 3px;
-    border: 1px solid #babbad;
+    border: 1px solid @dark-beige;
   }
   header#header-bar .search-component .search-bar-component {
     width: 100%;
@@ -1787,7 +1787,7 @@ ul.serp {
   margin-top: 20px;
   background-color: @white;
   border-radius: 5px;
-  border: 1px solid #babbad;
+  border: 1px solid @dark-beige;
 }
 
 div#placement {
@@ -1807,7 +1807,7 @@ div#content {
   width: 958px;
   background-color: @white;
   border-radius: 5px;
-  border: 1px solid #babbad;
+  border: 1px solid @dark-beige;
 }
 div#footer {
   margin: 0 auto;
@@ -2275,7 +2275,7 @@ body#user div.siteSearch.darker {
   padding-right: 22px;
 }
 body#admin div.siteSearch.darker {
-  background-color: #c1c1c1;
+  background-color: @light-mid-grey;
 }
 
 div.searchPlacement {
@@ -2873,7 +2873,7 @@ div.Tools h3.closed span.head {
 div.Tools h3 span.subhead {
   padding-left: 10px;
   font-size: 0.6875em;
-  color: #969696;
+  color: @light-grey;
 }
 div.Tools div.panel {
   width: 250px;
@@ -3005,7 +3005,7 @@ div.Tools div.dropper {
 }
 div.Tools div.dropper.on {
   background-color: @lightest-grey;
-  border: 1px solid #c3c3c3;
+  border: 1px solid @light-mid-grey;
   border-radius: 4px;
 }
 div.dropper.on div.arrow {
@@ -3110,7 +3110,7 @@ body#user div#headerNav ul.links li {
   border-top: 1px solid @beige-two;
 }
 body#admin div#headerNav ul.links li {
-  border-top: 1px solid #c1c1c1;
+  border-top: 1px solid @light-mid-grey;
 }
 div#headerNav ul.links li a,
 div#headerNav ul.links li span {
@@ -3126,7 +3126,7 @@ div#headerNav ul.links li span {
   text-decoration: none;
 }
 div#headerNav ul.links li a:hover {
-  background-color: #0e5a98;
+  background-color: @header-nav-hover-color;
   color: @white;
 }
 
@@ -3262,7 +3262,7 @@ div#headerLogin {
   font-family: 'Lucida Grande', Verdana, Geneva, Helvetica, Arial, sans-serif;
   font-size: 14px;
   border-radius: 10px;
-  background-color: #fefefe;
+  background-color: @modal-background-color;
   margin: 150px auto 15% auto;
   border: 1px solid @grey;
   width: 350px;
@@ -3272,7 +3272,7 @@ div#headerLogin {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   padding: 0px 20px;
-  background-color: #e8e8e8;
+  background-color: @modal-header-background-color;
   border-bottom: 1px solid @mid-grey;
 }
 
@@ -3298,7 +3298,7 @@ div#headerLogin {
 }
 
 .modal-header-copy p {
-  color: #555;
+  color: @modal-header-color;
 }
 
 .modal-content a {
@@ -3329,7 +3329,7 @@ div#headerLogin {
   border-radius: 5px;
   margin-bottom: 10px;
   border-radius: 5px;
-  background-color: rgba(244, 67, 54, 0.52);
+  background-color: fade(@red-two, 52);
 }
 
 .xauth-switch {
@@ -3376,7 +3376,7 @@ hr.forgot-padding {
 }
 
 .formFieldsDecoration.error #bridgeUsername {
-  background-color: rgba(244, 67, 54, 0.17);
+  background-color: fade(@red-two, 17);
 }
 
 .formFieldsErrorMsg {
@@ -3727,7 +3727,7 @@ div.contentBody.gradient {
 div#content div#contentLists {
   float: left;
   position: relative;
-  border-top: 1px solid #dcdcdc;
+  border-top: 1px solid @lighter-grey;
   background: @white url('/images/back_results.png') repeat-x;
 }
 div#resultsAuthors,
@@ -3766,10 +3766,10 @@ div#homeBlurb p {
   word-wrap: break-word;
 }
 div#homeStatement {
-  background: @lightest-grey -moz-linear-gradient(top, @white, gainsboro);
+  background: @lightest-grey -moz-linear-gradient(top, @white, @lighter-grey);
   background: @lightest-grey -webkit-gradient(linear, left top, left bottom, from(@white), to(@lightest-grey), color-stop(1, @lightest-grey));
   background-color: @lightest-grey;
-  filter: progid:DXImageTransform.Microsoft.Gradient(enabled='true',startColorstr=#FFFFFFFF, endColorstr=#FFEEEEEE);
+  filter: progid:DXImageTransform.Microsoft.Gradient(enabled='true',startColorstr=#FFFFFFFF, endColorstr=@whiteEEEEE);
   text-align: center;
   padding: 20px 0;
   width: 958px;
@@ -4241,7 +4241,7 @@ li.searchResultItem {
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 3px;
-  border-bottom: 1px solid #f3f1ea;
+  border-bottom: 1px solid @light-beige;
 }
 
 .searchResultItem .details {
@@ -4349,7 +4349,7 @@ a.cta-btn {
 }
 
 .check-book-availability {
-  background-color: rgba(88, 88, 88, 0.8);
+  background-color: fade(@dark-grey-two, 80);
 }
 
 .waitlist-msg {
@@ -4612,7 +4612,7 @@ div.editionTools.tools-override {
 div.navEdition {
   font-size: 0.9em;
   margin-top: 5px;
-  color: #555;
+  color: lighten(@dark-grey, 5);
 }
 span.booktitle {
   color: @dark-grey;
@@ -7250,7 +7250,7 @@ form#borrowbook fieldset.online label {
 form#borrowbook label strong {
   display: block;
   font-size: 1.25em;
-  color: #0082b9;
+  color: @darker-brand-blue;
   text-decoration: underline;
 }
 form#borrowbook input {
@@ -7603,7 +7603,7 @@ div#listsWork div.dropper {
 }
 div#listsWork div.dropper.on {
   background-color: @lightest-grey;
-  border: 1px solid #c3c3c3;
+  border: 1px solid @light-mid-grey;
   border-radius: 4px;
 }
 div#listsWork div.dropper h3 {
@@ -7632,7 +7632,7 @@ div#listsWork div.dropper div.dropdown {
 }
 
 div.dropper div.dropdown div.reading-lists p.reading-list-title {
-  background: #fdfcfd;
+  background: @white;
   padding: 5px 0px 0px 10px;
   margin: 0px;
   font-size: 0.8em;
@@ -7727,7 +7727,7 @@ div#subjectLists div.dropper {
 }
 div#subjectLists div.dropper.on {
   background-color: @lightest-grey;
-  border: 1px solid #c3c3c3;
+  border: 1px solid @light-mid-grey;
   border-radius: 4px;
 }
 div#subjectLists div.dropper h3 {
@@ -8092,10 +8092,10 @@ span.actions a span.checked-out {
 .page-banner a.button {
   text-decoration: none;
   background: @mid-blue;
-  color: #ffe;
+  color: @white;
 }
 .page-banner a.button:hover {
-  background: #62aad4;
+  background: @button-hover-blue;
   color: @white;
 }
 
@@ -8528,7 +8528,7 @@ ul#myreads-paginator li.selected:hover {
 }
 
 #mybooks .mybooks-menu ul li a.selected {
-  background-color: #d8e2ed;
+  background-color: @grey-blue;
 }
 
 .mybooks {
@@ -8578,7 +8578,7 @@ ul#myreads-paginator li.selected:hover {
 
 .mybooks-menu ul.preset-lists li a:selected,
 .mybooks-menu ul.loans-lists li a:selected {
-  background-color: #e5f1ff;
+  background-color: @pale-blue;
   border-radius: 3px;
 }
 
@@ -8645,7 +8645,7 @@ ul#myreads-paginator li.selected:hover {
 .reading-log-lite select {
   background-color: @white;
   color: @dark-grey;
-  border: 1px solid #c3c3c3;
+  border: 1px solid @light-mid-grey;
   border-radius: 4px;
   height: 2.5em;
   width: 100%;
