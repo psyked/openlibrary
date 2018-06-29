@@ -4293,12 +4293,20 @@ a.generic-button {
 div#footer-content {
   max-width: 960px;
   margin: 5px auto;
-  padding: 20px;
+  padding: 20px 0px;
+}
+
+@media only screen and (max-width: 960px) {
+  div#footer-content {
+    margin-left: 5px;
+    margin-right: 5px;
+    box-sizing: border-box;
+  }
 }
 
 div#footer-links {
   display: flex;
-  margin-left: 10px;
+  margin: 0 10px;
   line-height: 1.5em;
 }
 
