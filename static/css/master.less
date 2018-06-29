@@ -3,7 +3,8 @@
 
 table#editions {
   float: left;
-  width: 918px;
+  width: 100%;
+  max-width: 918px;
   clear: both;
   font-family: "Lucida Grande",Verdana,Geneva,Helvetica,Arial,sans-serif;
 }
@@ -32,7 +33,8 @@ table#editions td.icon {
   text-align: left;
   vertical-align: top;
   padding: 10px 0 10px 10px;
-  width: 143px;
+  width: 100%;
+  max-width: 143px;
 }
 
 table#editions td.icon ul {
@@ -56,7 +58,8 @@ table#editions div.title {
   font-size: 1.0em;
   padding: 10px 0;
   float: left;
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
 }
 
 table#editions div.links {
@@ -83,7 +86,8 @@ table#editions div.links {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   height: 30px;
   margin-left: -125px;
   margin-top: -15px;
@@ -158,7 +162,8 @@ table#editions div.links {
 table.display {
   float: left;
   margin: 0 auto;
-  width: 918px;
+  width: 100%;
+  max-width: 918px;
   clear: both;
 }
 
@@ -423,14 +428,16 @@ table.readinglog-stats tr:nth-child(even) {
 
 .carousel .book img.bookcover {
   margin: 0 auto;
-  width: 130px;
+  width: 100%;
+  max-width: 130px;
   height: 200px;
   box-shadow: 1px 2px 5px 0px @book-cover-shadow-color;
   border-radius: 3px;
 }
 
 .carousel .book .book-metadata {
-  width: 130px;
+  width: 100%;
+  max-width: 130px;
   margin: 0px auto;
 }
 
@@ -454,7 +461,8 @@ table.readinglog-stats tr:nth-child(even) {
   background: @primary-blue;
   border-radius: 3px;
   font-family: "Lucida Grande", Verdana, Geneva, Helvetica, Arial, sans-serif;
-  width: 130px;
+  width: 100%;
+  max-width: 130px;
   margin: 0px auto;
   margin-top: 5px;
   text-align: center;
@@ -1895,13 +1903,15 @@ header#header-bar .account-component .account-dropdown {
   position: absolute;
   z-index: 999;
   text-align: right;
-  width: 125px;
+  width: 100%;
+  max-width: 125px;
   margin-top: 5px;
   right: 11px;
 }
 
 header#header-bar .account-component .account-dropdown ul a li {
-  width: 150px;
+  width: 100%;
+  max-width: 150px;
   text-decoration: none;
   text-align: left;
   padding: 5px;
@@ -1916,7 +1926,8 @@ header#header-bar .account-component .account-dropdown ul a li {
 
 #topNotice .topNotice-container {
   margin: 0 auto;
-  width: 958px;
+  width: 100%;
+  max-width: 958px;
 }
 
 #topNotice .topNotice-left {
@@ -2093,7 +2104,8 @@ header#header-bar .expand .search-bar-input input {
   }
 
   header#header-bar .search-component .search-bar-component {
-    width: 207px;
+    width: 100%;
+    max-width: 207px;
   }
 
   header#header-bar .search-component .search-bar {
@@ -2168,7 +2180,8 @@ header#header-bar .expand .search-bar-input input {
   }
 
   header#header-bar .search-component .search-bar-component {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
   }
 
   header#header-bar .search-component .search-justify-right {
@@ -2285,7 +2298,8 @@ header#header-bar .expand .search-bar-input input {
 
 ul.serp {
   float: left;
-  width: 660px;
+  width: 100%;
+  max-width: 660px;
   margin-left: 0;
 }
 
@@ -2303,23 +2317,25 @@ ul.serp {
 }
 
 div#placement {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
   text-align: left;
 }
 
 div#position {
-  width: 960px;
+  max-width: 960px;
 }
 
 div#header {
-  width: 960px;
+  max-width: 960px;
 }
 
 div#content {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   clear: both;
   position: relative;
-  width: 958px;
+  max-width: 960px;
   background-color: @white;
   border-radius: 5px;
   border: 1px solid @dark-beige;
@@ -2559,7 +2575,8 @@ fieldset {
 fieldset.minor {
   display: block;
   float: left;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   padding: 0;
   margin: 0;
 }
@@ -2581,7 +2598,8 @@ fieldset.minor legend {
 
 .formBack {
   float: left;
-  width: 830px;
+  width: 100%;
+  max-width: 830px;
   padding: 10px;
   background-color: @lightest-grey;
 }
@@ -2617,12 +2635,14 @@ div.formDivider {
 
 .formBackLeft {
   float: left;
-  width: 670px;
+  width: 100%;
+  max-width: 670px;
 }
 
 .formBackRight {
   float: left;
-  width: 120px;
+  width: 100%;
+  max-width: 120px;
   padding: 10px 10px 15px 30px;
   text-align: center;
 }
@@ -2645,7 +2665,8 @@ form.pagesearchbox {
 }
 
 form.olform .label {
-  width: 838px;
+  width: 100%;
+  max-width: 838px;
   padding: 10px 0 2px;
 }
 
@@ -2671,7 +2692,8 @@ form.olform input[type=text],
 form.olform input[type=email],
 form.olform input[type=password],
 form.olform textarea {
-  width: 475px;
+  width: 100%;
+  max-width: 475px;
   font-size: 1.0em;
   font-family: "Lucida Grande", "Trebuchet MS", Geneva, Helvetica, Arial, sans-serif;
   padding: 3px;
@@ -2685,7 +2707,8 @@ form.olform.books fieldset.major input[type=text],
 form.olform.books fieldset.major input[type=email],
 form.olform.books fieldset.major input[type=password],
 form.olform.books fieldset.major textarea {
-  width: 848px;
+  width: 100%;
+  max-width: 848px;
   font-size: 0.875em;
 }
 
@@ -2693,12 +2716,14 @@ form.olform.books fieldset.major .formBack input[type=text],
 form.olform.books fieldset.major .formBack input[type=email],
 form.olform.books fieldset.major .formBack input[type=password],
 form.olform.books fieldset.major .formBack textarea {
-  width: 818px;
+  width: 100%;
+  max-width: 818px;
   font-size: 0.875em;
 }
 
 form.olform .input {
-  width: 838px;
+  width: 100%;
+  max-width: 838px;
 }
 
 input.repeat-add {
@@ -2797,7 +2822,8 @@ span#masker {
 div.siteSearch {
   overflow: visible;
   border-radius: 5px;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
 }
 
 body#user div.siteSearch {
@@ -2807,7 +2833,8 @@ body#user div.siteSearch {
 }
 
 div#headerSearch {
-  width: 316px;
+  width: 100%;
+  max-width: 316px;
   padding: 9px;
   outline: none;
 }
@@ -2837,7 +2864,8 @@ div.siteSearch input[type=submit] {
 
 div.siteSearch input[type=text] {
   margin: 0px;
-  width: 215px;
+  width: 100%;
+  max-width: 215px;
   padding: 12px;
   border-radius: 5px;
   border: 1px solid @mid-grey;
@@ -2893,12 +2921,14 @@ div.searchFilter .searchCheckboxes {
 }
 
 input.query {
-  width: 205px;
+  width: 100%;
+  max-width: 205px;
 }
 
 div.searchOptions {
   display: none;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
 }
 
 div#topOptions {
@@ -3034,7 +3064,8 @@ fieldset.home legend {
 .ui-dialog {
   position: relative;
   padding: 0;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   border: 10px solid @brown;
   background-color: @white;
   border-radius: 12px;
@@ -3145,7 +3176,8 @@ body#edit .input {
 }
 
 body#edit textarea {
-  width: 906px;
+  width: 100%;
+  max-width: 906px;
   height: 500px;
   font-family: "Lucida Console", "Courier New", monospace;
   font-size: 0.875em;
@@ -3199,7 +3231,8 @@ div.adminDelete {
   position: absolute;
   top: 8px;
   left: 205px;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   white-space: nowrap;
   overflow: visible;
   text-align: center;
@@ -3233,17 +3266,20 @@ body#edit #editHead p {
 }
 
 body#edit .formElement.title {
-  width: 618px;
+  width: 100%;
+  max-width: 618px;
   float: left;
 }
 
 body#edit .formElement.title input {
-  width: 580px;
+  width: 100%;
+  max-width: 580px;
 }
 
 body#edit .formElement.pagetype,
 body#edit .formElement.pagetype select {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   float: left;
 }
 
@@ -3343,11 +3379,13 @@ div#editHistory {
 
 div#editTools {
   white-space: nowrap;
+  width: 100%;
   max-width: 280px;
 }
 
 body#edit div#editTools {
   padding: 20px;
+  width: 100%;
   max-width: 300px;
 }
 
@@ -3413,7 +3451,8 @@ a.linkButton {
 }
 
 div#revertNotice {
-  width: 958px;
+  width: 100%;
+  max-width: 958px;
   height: 45px;
   text-align: center;
   padding-top: 15px;
@@ -3439,7 +3478,8 @@ body#form div#revertLink {
 }
 
 div.Tools {
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   margin: 0 0 25px 20px;
   position: relative;
 }
@@ -3447,7 +3487,8 @@ div.Tools {
 div.Tools h3 {
   font-size: 100%;
   min-height: 32px;
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   font-family: "Lucida Grande",Verdana,Geneva,Helvetica,Arial,sans-serif!important;
   font-weight: normal;
   outline: 0;
@@ -3530,7 +3571,8 @@ div.Tools h3 span.subhead {
 }
 
 div.Tools div.panel {
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   margin-bottom: 10px;
 }
 
@@ -3559,7 +3601,8 @@ div.Tools div.panel p {
 }
 
 div.Tools table {
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
 }
 
 div.Tools table td {
@@ -3579,7 +3622,8 @@ div.Tools table td.price {
 div.Tools table.buy-options-table {
   border-spacing: 5px;
   margin-left: 0px;
-  width: 175px;
+  width: 100%;
+  max-width: 175px;
 }
 
 div.Tools table.buy-options-table td {
@@ -3677,7 +3721,8 @@ div.Tools div.dropper {
   position: absolute;
   top: 0;
   left: 32px;
-  width: 198px;
+  width: 100%;
+  max-width: 198px;
   z-index: 10000;
 }
 
@@ -3768,7 +3813,8 @@ div.verify span {
 div#headerNav {
   position: relative;
   float: left;
-  width: 370px;
+  width: 100%;
+  max-width: 370px;
   height: 150px;
 }
 
@@ -3782,7 +3828,8 @@ div#headerNav ul.links {
   bottom: 0;
   clear: left;
   float: left;
-  width: 369px;
+  width: 100%;
+  max-width: 369px;
 }
 
 div#headerNav ul.links li {
@@ -3831,7 +3878,8 @@ div#headerNav ul.links li a:hover {
 div#headerLogo {
   position: relative;
   float: left;
-  width: 220px;
+  width: 100%;
+  max-width: 220px;
   height: 140px;
   margin-top: 10px;
 }
@@ -3854,7 +3902,8 @@ div#headerLogo p.tagline {
   position: absolute;
   left: 0;
   top: 118px;
-  width: 220px;
+  width: 100%;
+  max-width: 220px;
   text-align: center;
   font-family: "Lucida Grande", Verdana, Geneva, Helvetica, Arial, sans-serif;
   font-size: 0.6875em;
@@ -3870,7 +3919,8 @@ div#headerLogo p.tagline a {
 
 div#headerPlace {
   float: left;
-  width: 370px;
+  width: 100%;
+  max-width: 370px;
   height: 150px;
 }
 
@@ -3952,7 +4002,8 @@ div#headerLogin {
 
 .modal-loading {
   position: absolute;
-  width: 175px;
+  width: 100%;
+  max-width: 175px;
   right: 50%;
   margin-right: -90px;
   top: 275px;
@@ -3978,7 +4029,8 @@ div#headerLogin {
   background-color: @modal-background-color;
   margin: 150px auto 15% auto;
   border: 1px solid @grey;
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
 }
 
 .modal-header {
@@ -4336,20 +4388,22 @@ div.contentWide,
 div#contentMeta {
   float: left;
   clear: both;
-  width: 918px;
+  width: 100%;
+  max-width: 918px;
   padding: 10px 20px 20px;
+  box-sizing: border-box;
 }
 
 .contentTwothird {
   float: left;
-  width: 610px;
+  max-width: 610px;
   min-height: 100px;
   margin-bottom: 20px;
   padding-right: 38px;
 }
 
 .indent .contentTwoThird {
-  width: 544px;
+  max-width: 544px;
 }
 
 .contentTwothird p {
@@ -4358,13 +4412,13 @@ div#contentMeta {
 
 .contentOnethird {
   float: left;
-  width: 270px;
+  max-width: 270px;
   min-height: 100px;
   margin-bottom: 20px;
 }
 
 .indent .contentOneThird {
-  width: 237px;
+  max-width: 237px;
 }
 
 .contentHalf {
@@ -4397,7 +4451,8 @@ div#contentMeta {
 }
 
 .indent .contentThreeQuarter {
-  width: 609px;
+  width: 100%;
+  max-width: 609px;
 }
 
 .contentSpacer {
@@ -4415,7 +4470,8 @@ div.spacer {
 div.contentLeft {
   float: left;
   clear: left;
-  width: 439px;
+  width: 100%;
+  max-width: 439px;
   min-height: 100px;
   padding-right: 20px;
 }
@@ -4423,14 +4479,16 @@ div.contentLeft {
 div.contentRight {
   float: left;
   clear: right;
-  width: 439px;
+  width: 100%;
+  max-width: 439px;
   min-height: 100px;
   padding-left: 20px;
 }
 
 .indent .contentLeft,
 .indent .contentRight {
-  width: 389px;
+  width: 100%;
+  max-width: 389px;
 }
 
 div#contentMsg {
@@ -4440,8 +4498,10 @@ div#contentMsg {
 }
 
 div#contentHead {
-  width: 918px;
+  width: 100%;
+  max-width: 918px;
   padding: 20px;
+  box-sizing: border-box;
 }
 
 div#contentBody,
@@ -4450,7 +4510,8 @@ div.contentBody {
 }
 
 div.contentBody.indent {
-  width: 818px;
+  width: 100%;
+  max-width: 818px;
   padding: 0 70px 20px;
 }
 
@@ -4471,12 +4532,14 @@ div#content div#contentLists {
 
 div#resultsAuthors,
 div#resultsPublishers {
-  width: 438px;
+  width: 100%;
+  max-width: 438px;
   float: left;
 }
 
 div#resultsAbout {
-  width: 918px;
+  width: 100%;
+  max-width: 918px;
   margin-top: 30px;
 }
 
@@ -4486,7 +4549,8 @@ div.editThis {
 
 /* HOME PAGE */
 div#homeSplash {
-  width: 958px;
+  width: 100%;
+  max-width: 958px;
   height: 100px;
   background: @lightest-grey url("/images/homesplash.jpg") no-repeat;
   text-align: center;
@@ -4516,7 +4580,8 @@ div#homeStatement {
   filter: progid:DXImageTransform.Microsoft.Gradient(enabled='true', startColorstr=#ffffffFF, endColorstr=#ffeeeeEE);
   text-align: center;
   padding: 20px 0;
-  width: 958px;
+  width: 100%;
+  max-width: 958px;
 }
 
 div#homeStatement p {
@@ -4575,7 +4640,8 @@ h3 a.header:hover {
 }
 
 div.homeSplash {
-  width: 958px;
+  width: 100%;
+  max-width: 958px;
   height: 100px;
   background: @lightest-grey url("/images/homesplash.jpg") no-repeat 0 -45px;
   text-align: center;
@@ -4656,13 +4722,15 @@ ul#olBlog li {
 
 .contentLists.results .SRPCover img {
   height: 195px;
-  width: 130px;
+  width: 100%;
+  max-width: 130px;
   border-radius: 3px;
 }
 
 .contentLists.results .SRPCoverBlank {
   position: relative;
-  width: 115px;
+  width: 100%;
+  max-width: 115px;
   height: 230px;
   padding: 10px;
   text-align: center;
@@ -4674,7 +4742,8 @@ ul#olBlog li {
 
 .contentLists.results .SRPCoverBlank .innerBorder {
   float: left;
-  width: 113px;
+  width: 100%;
+  max-width: 113px;
   height: 178px;
   border: 1px solid @white;
 }
@@ -4691,7 +4760,8 @@ div#content div.contentLists {
 }
 /* HOME PAGE CAROUSEL SKIN */
 .resultsCovers {
-  width: 958px;
+  width: 100%;
+  max-width: 958px;
 }
 
 .resultsCovers .jcarousel-container {
@@ -4713,14 +4783,16 @@ div#content div.contentLists {
 }
 
 .resultsCovers .jcarousel-item-horizontal {
-  width: 153px;
+  width: 100%;
+  max-width: 153px;
   height: 225px;
   margin-right: 0;
 }
 
 .resultsCovers h3 {
   position: relative;
-  width: 220px;
+  width: 100%;
+  max-width: 220px;
   height: 19px;
   top: 180px;
   left: 349px;
@@ -4735,7 +4807,8 @@ div#content div.contentLists {
 
 .resultsCovers h2 {
   position: relative;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   top: 180px;
   left: 309px;
   text-align: center;
@@ -4804,12 +4877,14 @@ p.category-title {
 }
 
 .resultsIcons .jcarousel-container {
-  width: 958px;
+  width: 100%;
+  max-width: 958px;
   padding: 5px 0px;
 }
 
 .resultsIcons .jcarousel-item-horizontal {
-  width: 153px;
+  width: 100%;
+  max-width: 153px;
   margin-right: 0;
 }
 
@@ -4839,7 +4914,8 @@ p.category-title {
 }
 
 #home-stats-charts .statschart .chartShow {
-  width: 145px;
+  width: 100%;
+  max-width: 145px;
   height: 60px;
   padding: 0 5px;
   border-bottom: 1px solid @grey;
@@ -4938,7 +5014,8 @@ ul.homeCarousel li {
 }
 
 ul.homeCarousel .hiddenCoverMagic {
-  width: 100px;
+  width: 100%;
+  max-width: 100px;
   height: 200px;
 }
 
@@ -5056,7 +5133,8 @@ li.searchResultItem {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 245px;
+  width: 100%;
+  max-width: 245px;
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   -webkit-box-pack: strech;
@@ -5175,7 +5253,8 @@ a.cta-btn {
 div#searchResults .SRPCover {
   margin: 0 15px 20px 0;
   vertical-align: middle;
-  width: 130px;
+  width: 100%;
+  max-width: 130px;
   height: 200px;
 }
 
@@ -5185,7 +5264,8 @@ div#searchResults .SRPCover img {
 
 div#searchResults .SRPCoverBlank {
   position: relative;
-  width: 130px;
+  width: 100%;
+  max-width: 130px;
   height: 200px;
   padding: 10px;
   margin: 0 15px 20px 0;
@@ -5198,7 +5278,8 @@ div#searchResults .SRPCoverBlank {
 
 div#searchResults .SRPCoverBlank .innerBorder {
   float: left;
-  width: 130px;
+  width: 100%;
+  max-width: 130px;
   height: 200px;
   border: 1px solid @white;
 }
@@ -5242,7 +5323,8 @@ div#searchResults .SRPCoverBlank a {
 
 .authorList li {
   margin-bottom: 1.5em;
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   font-size: 1em;
   color: @grey;
 }
@@ -5266,7 +5348,8 @@ ul#siteSearch li {
 }
 
 div#searchFacets {
-  width: 220px;
+  width: 100%;
+  max-width: 220px;
   padding: 0px 15px;
 }
 
@@ -5338,7 +5421,8 @@ div#resultsLists {
 
 div.list {
   float: left;
-  width: 207px;
+  width: 100%;
+  max-width: 207px;
   padding-top: 10px;
 }
 
@@ -5354,7 +5438,8 @@ div.list img {
 
 div.list .copy {
   float: left;
-  width: 155px;
+  width: 100%;
+  max-width: 155px;
 }
 
 div.list h5 {
@@ -5423,19 +5508,22 @@ h2.edition-title {
 
 div.workDetails {
   float: left;
-  width: 915px;
+  width: 100%;
+  max-width: 915px;
 }
 
 div.editionCover {
   float: left;
-  width: 180px;
+  width: 100%;
+  max-width: 180px;
   min-height: 10px;
   padding-right: 1.5em;
 }
 
 div.editionAbout {
   float: left;
-  width: 430px;
+  width: 100%;
+  max-width: 430px;
   min-height: 10px;
 }
 
@@ -5446,7 +5534,8 @@ div.editionAbout p {
 
 div.editionTools {
   float: right;
-  width: 270px;
+  width: 100%;
+  max-width: 270px;
   min-height: 10px;
 }
 
@@ -5468,15 +5557,18 @@ span.booktitle {
 
 div.workCover {
   float: right;
-  width: 270px;
+  width: 100%;
+  max-width: 270px;
   min-height: 10px;
 }
 
 div.workAbout {
   float: left;
   clear: left;
-  width: 610px;
+  width: 100%;
+  max-width: 610px;
   padding-right: 38px;
+  box-sizing: border-box;
 }
 
 div.workPadding {
@@ -5491,11 +5583,13 @@ div.workPadding p {
 
 div.workHelp {
   float: left;
-  width: 553px;
+  width: 100%;
+  max-width: 553px;
   background-color: @light-yellow;
   padding: 20px;
   font-size: 14px;
   margin-bottom: 15px;
+  box-sizing: border-box;
 }
 
 div.work {
@@ -5520,7 +5614,8 @@ div.work span.editions {
 }
 
 .illustration img {
-  width: 180px;
+  width: 100%;
+  max-width: 180px;
 }
 
 #contentOnethird .illustration img,
@@ -5530,7 +5625,8 @@ div.work span.editions {
 
 .illustration .SRPCoverBlank {
   position: relative;
-  width: 148px;
+  width: 100%;
+  max-width: 148px;
   height: 225px;
   padding: 15px;
   text-align: center;
@@ -5545,13 +5641,15 @@ div.work span.editions {
 
 .illustration .SRPCoverBlank .innerBorder {
   border: 2px solid @white;
-  width: 144px;
+  width: 100%;
+  max-width: 144px;
   height: 221px;
 }
 
 .illustration .SRPCoverBlank.author {
   position: relative;
-  width: 131px;
+  width: 100%;
+  max-width: 131px;
   height: 180px;
   text-align: center;
   background: transparent url("/images/icons/avatar_author-lg.png") 15px 15px no-repeat;
@@ -5564,7 +5662,8 @@ div.work span.editions {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 108px;
+  width: 100%;
+  max-width: 108px;
   margin-left: -54px;
   height: 100px;
   margin-top: -50px;
@@ -5575,7 +5674,8 @@ div.work span.editions {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 108px;
+  width: 100%;
+  max-width: 108px;
   margin-left: -54px;
   height: 80px;
   margin-top: -40px;
@@ -5623,7 +5723,8 @@ div.work span.editions {
 div.books {
   float: left;
   padding-top: 20px;
-  width: 915px;
+  width: 100%;
+  max-width: 915px;
 }
 
 div.books .coverMagic {
@@ -5694,7 +5795,8 @@ form.recordsAdd input[type=text] {
 }
 
 form.recordsAdd input[type=text].wide {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
 }
 
 form.recordsAdd textarea {
@@ -5702,7 +5804,8 @@ form.recordsAdd textarea {
   font-family: Georgia, "Palatino Linotype", "Book Antiqua", Palatino, serif;
   margin: 10px 0 20px;
   color: @dark-grey;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   height: 80px;
   padding: 3px;
 }
@@ -5781,7 +5884,8 @@ form.olform.books .label {
 
 .TitleAuthor {
   margin-bottom: 20px;
-  width: 920px;
+  width: 100%;
+  max-width: 920px;
   float: left;
   clear: both;
 }
@@ -5847,13 +5951,15 @@ img.cover {
 #cover {
   border: 2px solid @brown;
   background-color: @white;
-  width: 120px;
+  width: 100%;
+  max-width: 120px;
   height: 180px;
   text-align: center;
 }
 
 #cover img {
-  width: 120px;
+  width: 100%;
+  max-width: 120px;
   margin: 0 auto;
 }
 
@@ -5876,11 +5982,13 @@ table.navEdition td {
 }
 
 #tabsAddbook input.addweb {
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
 }
 
 #tabsAddauthor input.addweb {
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
 }
 
 select#select-id {
@@ -5969,19 +6077,22 @@ body#form .jcarousel-list-horizontal {
 }
 
 body#form .jcarousel-container {
-  width: 525px;
+  width: 100%;
+  max-width: 525px;
   height: 153px;
   margin: 20px 0 0 -60px;
   padding: 0;
 }
 
 body#form .jcarousel-clip {
-  width: 525px;
+  width: 100%;
+  max-width: 525px;
   height: 150px;
 }
 
 body#form .jcarousel-item-horizontal {
-  width: 100px;
+  width: 100%;
+  max-width: 100px;
   height: 150px;
   margin-right: 5px;
 }
@@ -6034,7 +6145,8 @@ div.excerpt .attribution {
 }
 
 table.identifiers {
-  width: 395px;
+  width: 100%;
+  max-width: 395px;
 }
 
 .identifiers td {
@@ -6086,7 +6198,8 @@ table.meta td {
 
 table.meta td.title {
   white-space: nowrap;
-  width: 120px;
+  width: 100%;
+  max-width: 120px;
 }
 
 table.meta td.object {
@@ -6123,6 +6236,7 @@ table.meta td.descrip {
 
 table.history {
   width: 100%;
+  box-sizing: border-box;
   margin-top: 10px;
   border-top: 1px solid @grey-e7e7e7;
 }
@@ -6159,7 +6273,7 @@ div#navMask {
 
 div#logoHistory {
   position: absolute;
-  width: 960px;
+  max-width: 960px;
   height: 1px;
   text-align: center;
   overflow: visible;
@@ -6172,14 +6286,16 @@ div#contentHistory {
   display: none;
   top: 151px;
   z-index: 1002;
-  width: 890px;
+  width: 100%;
+  max-width: 890px;
   height: 91px;
   margin: 0 30px;
 }
 
 div#historyPosition {
   position: relative;
-  width: 880px;
+  width: 100%;
+  max-width: 880px;
   height: 85px;
   background-color: @light-yellow;
   border: 5px solid @brown;
@@ -6218,7 +6334,8 @@ div#historyCurrent {
   position: absolute;
   top: 0;
   left: 0;
-  width: 195px;
+  width: 100%;
+  max-width: 195px;
   height: 85px;
   text-align: center;
   font-family: "Lucida Grande", Verdana, Geneva, Helvetica, Arial, sans-serif;
@@ -6239,14 +6356,16 @@ div#historyRevert {
   position: absolute;
   top: 0;
   left: 0;
-  width: 880px;
+  width: 100%;
+  max-width: 880px;
   height: 85px;
 }
 
 div#historyRevert a.revertSlideLink {
   display: block;
   float: left;
-  width: 125px;
+  width: 100%;
+  max-width: 125px;
   height: 55px;
   padding: 25px 20px 0 65px;
   background-image: url("/images/historyRevert.png");
@@ -6286,7 +6405,8 @@ div#historyRevert form .opt {
 }
 
 div#historyRevert form input[type=text] {
-  width: 235px;
+  width: 100%;
+  max-width: 235px;
   padding: 2px;
   font-size: 12px;
 }
@@ -6311,7 +6431,8 @@ div#historyExplore {
 
 div#historyExploreSlide {
   position: relative;
-  width: 645px;
+  width: 100%;
+  max-width: 645px;
   height: 43px;
   padding: 15px 0 0 15px;
   overflow: hidden;
@@ -6333,7 +6454,8 @@ div#historyExplore #version {
   white-space: nowrap;
   text-align: center;
   color: @teal;
-  width: 100px;
+  width: 100%;
+  max-width: 100px;
 }
 
 div#historyExplore #vtitle {
@@ -6502,29 +6624,34 @@ div#historyExplore a#historyFwd {
 
 /* RESULTS CAROUSEL SKIN */
 #resultsCovers {
-  width: 958px;
+  width: 100%;
+  max-width: 958px;
 }
 
 #resultsCovers .jcarousel-container,
 #resultsList .jcarousel-container {
-  width: 918px;
+  width: 100%;
+  max-width: 918px;
   padding: 20px;
 }
 
 #resultsCovers .jcarousel-clip,
 #resultsList .jcarousel-clip {
-  width: 918px;
+  width: 100%;
+  max-width: 918px;
   height: 100%;
 }
 
 #resultsCovers .jcarousel-item-horizontal {
-  width: 918px;
+  width: 100%;
+  max-width: 918px;
   margin-right: 0;
   height: 100%;
 }
 
 #resultsList .jcarousel-item-vertical {
-  width: 918px;
+  width: 100%;
+  max-width: 918px;
   height: 60px !important;
   margin-top: 3px;
   padding-bottom: 3px;
@@ -6534,7 +6661,8 @@ div#historyExplore a#historyFwd {
 
 #resultsCovers h3 {
   position: relative;
-  width: 220px;
+  width: 100%;
+  max-width: 220px;
   height: 19px;
   top: 180px;
   left: 349px;
@@ -6549,7 +6677,8 @@ div#historyExplore a#historyFwd {
 
 #resultsCovers h2 {
   position: relative;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   top: 180px;
   left: 309px;
   text-align: center;
@@ -6566,13 +6695,15 @@ div#historyExplore a#historyFwd {
   top: 0;
   left: 0;
   background: @white url("/images/back_results.png") repeat-x;
-  width: 958px;
+  width: 100%;
+  max-width: 958px;
   height: 485px;
   z-index: 3000;
 }
 
 #coversNone {
-  width: 940px;
+  width: 100%;
+  max-width: 940px;
 }
 
 div#resultsCovers a {
@@ -6599,7 +6730,8 @@ div#resultsCovers a {
 
 #contentLists.results .SRPCover img {
   height: 195px;
-  width: 130px;
+  width: 100%;
+  max-width: 130px;
 }
 
 .carousel-section .SRPCover img {
@@ -6608,7 +6740,8 @@ div#resultsCovers a {
 
 #contentLists.results .SRPCoverBlank {
   position: relative;
-  width: 115px;
+  width: 100%;
+  max-width: 115px;
   height: 165px;
   padding: 10px;
   text-align: center;
@@ -6620,7 +6753,8 @@ div#resultsCovers a {
 
 #contentLists.results .SRPCoverBlank .innerBorder {
   float: left;
-  width: 113px;
+  width: 100%;
+  max-width: 113px;
   height: 163px;
   border: 1px solid @white;
 }
@@ -6629,7 +6763,8 @@ div#resultsCovers a {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 105px;
+  width: 100%;
+  max-width: 105px;
   margin-left: -52px;
   height: 100px;
   margin-top: -50px;
@@ -6859,24 +6994,28 @@ div.subjects {
 /* RESULTS CAROUSEL SKIN */
 #editionsCovers .jcarousel-container,
 #editionsList .jcarousel-container {
-  width: 918px;
+  width: 100%;
+  max-width: 918px;
   padding: 20px;
 }
 
 #editionsCovers .jcarousel-clip,
 #editionsList .jcarousel-clip {
-  width: 918px;
+  width: 100%;
+  max-width: 918px;
   height: 472px;
 }
 
 #editionsCovers .jcarousel-item-horizontal {
-  width: 918px;
+  width: 100%;
+  max-width: 918px;
   height: 472px;
   margin-right: 0;
 }
 
 #editionsList .jcarousel-item-vertical {
-  width: 918px;
+  width: 100%;
+  max-width: 918px;
   height: 60px !important;
   margin-top: 3px;
   padding-bottom: 3px;
@@ -6902,7 +7041,8 @@ div#editionsCovers a {
 
 #contentLists.editions .SRPCoverBlank {
   position: relative;
-  width: 115px;
+  width: 100%;
+  max-width: 115px;
   height: 165px;
   padding: 10px;
   margin: 0 20px 5px 0;
@@ -6914,7 +7054,8 @@ div#editionsCovers a {
 }
 
 #contentLists.editions .SRPCoverBlank .innerBorder {
-  width: 113px;
+  width: 100%;
+  max-width: 113px;
   height: 163px;
   border: 1px solid @white;
 }
@@ -6941,7 +7082,8 @@ div#editionsCovers a {
 div.floater {
   position: relative;
   font-family: "Lucida Grande", Verdana, Geneva, Helvetica, Arial, sans-serif;
-  width: 640px;
+  width: 100%;
+  max-width: 640px;
   min-height: 670px;
   background: @white;
   text-align: left;
@@ -6949,7 +7091,8 @@ div.floater {
 
 div#throbber {
   position: absolute;
-  width: 220px;
+  width: 100%;
+  max-width: 220px;
   height: 19px;
   top: 280px;
   left: 210px;
@@ -7052,7 +7195,8 @@ div.tabsPop {
 
 div.popAlert {
   display: none;
-  width: 550px;
+  width: 100%;
+  max-width: 550px;
   padding: 8px 16px;
   margin-bottom: 15px;
   background: url("/images/icons/icon_alert.png") no-repeat;
@@ -7105,7 +7249,8 @@ div.coverFloat a.floaterShut:hover {
 }
 
 #wikicode textarea {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   height: 200px;
   padding: 10px;
   margin: 10px;
@@ -7128,7 +7273,8 @@ div.coverFloat a.floaterShut:hover {
 body#form {
   text-align: left;
   background-color: @white;
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   min-height: 440px;
   overflow: hidden;
 }
@@ -7136,7 +7282,8 @@ body#form {
 body#form #placement,
 body#form #position,
 body#form #content {
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   min-height: 440px;
 }
 
@@ -7151,7 +7298,8 @@ form.floatform {
 
 body#form .formButtons {
   position: absolute;
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   height: 50px;
   bottom: 0;
   left: 0;
@@ -7159,7 +7307,8 @@ body#form .formButtons {
 }
 
 form.floatform .label {
-  width: 560px;
+  width: 100%;
+  max-width: 560px;
   padding-top: 20px;
 }
 
@@ -7174,12 +7323,14 @@ form.floatform .label span {
 }
 
 form.floatform .input {
-  width: 560px;
+  width: 100%;
+  max-width: 560px;
   padding-top: 20px;
 }
 
 form.floatform div#covers.input {
-  width: 560px;
+  width: 100%;
+  max-width: 560px;
   max-height: 132px;
   overflow: hidden;
   padding-top: 20px;
@@ -7189,7 +7340,8 @@ form.floatform div#covers.input {
 
 form.floatform input[type=text],
 form.floatform input[type=file] {
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   font-size: 1.125em;
   font-family: "Lucida Grande", Verdana, Geneva, Helvetica, Arial, sans-serif;
   padding: 3px;
@@ -7213,7 +7365,8 @@ body#form div.centerIt {
 }
 
 body#form .column {
-  width: 560px;
+  width: 100%;
+  max-width: 560px;
   min-height: 90px;
   float: left;
   margin: 10px;
@@ -7224,7 +7377,8 @@ body#form .column {
 body#form .trashPosition {
   position: relative;
   float: left;
-  width: 580px;
+  width: 100%;
+  max-width: 580px;
   height: 90px;
 }
 
@@ -7244,7 +7398,8 @@ body#form .trashPosition:hover .trashCan {
 }
 
 body#form .trash {
-  width: 560px;
+  width: 100%;
+  max-width: 560px;
   height: 90px;
   overflow: hidden;
   background-color: @light-yellow;
@@ -7283,13 +7438,15 @@ body#form .portlet-content {
 
 body#form .imagePost {
   float: left;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   text-align: center;
 }
 
 body#form .imageSaved {
   float: left;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   font-size: 0.75em;
   color: @grey;
 }
@@ -7325,7 +7482,8 @@ body#form .saved {
 div.floaterAdd {
   position: relative;
   font-family: "Lucida Grande", Verdana, Geneva, Helvetica, Arial, sans-serif;
-  width: 640px;
+  width: 100%;
+  max-width: 640px;
   background: @white;
   text-align: left;
 }
@@ -7335,12 +7493,14 @@ div.floaterAdd .formElement {
 }
 
 div.floaterAdd form.floatform .input {
-  width: 560px;
+  width: 100%;
+  max-width: 560px;
   padding-top: 5px;
 }
 
 div.floaterAdd form.floatform .label {
-  width: 560px;
+  width: 100%;
+  max-width: 560px;
   padding-top: 20px;
 }
 
@@ -7352,7 +7512,8 @@ div.floaterAdd form.floatform .label label {
 
 div.floaterAdd form.floatform input[type=text],
 div.floaterAdd form.floatform textarea {
-  width: 560px;
+  width: 100%;
+  max-width: 560px;
   margin-left: 0;
 }
 
@@ -7611,14 +7772,16 @@ table.records .label {
 
 div.chartHolder {
   position: relative;
-  width: 439px;
+  width: 100%;
+  max-width: 439px;
   height: 61px;
   overflow: hidden;
   background-color: @lightest-grey;
 }
 
 div.chartDisplay {
-  width: 430px;
+  width: 100%;
+  max-width: 430px;
   height: 50px;
   padding: 10px 3px 0;
   border-bottom: 1px solid @black;
@@ -7731,14 +7894,16 @@ div#topEdits a {
 
 div#uniqueIps {
   float: left;
-  width: 918px;
+  width: 100%;
+  max-width: 918px;
   margin: 20px 0 30px;
 }
 
 div.measurements,
 div.measurements div {
   float: left;
-  width: 180px;
+  width: 100%;
+  max-width: 180px;
 }
 
 div.measurements .caption {
@@ -7767,7 +7932,8 @@ table#pageHistory {
 }
 
 table.changeHistory {
-  width: 848px;
+  width: 100%;
+  max-width: 848px;
   font-family: "Lucida Grande", Verdana, Geneva, Helvetica, sans-serif;
   margin: 0;
 }
@@ -7804,7 +7970,8 @@ table.changeHistory td.comment {
 .historyPager {
   text-align: center;
   margin: 20px 0;
-  width: 848px;
+  width: 100%;
+  max-width: 848px;
 }
 
 table#adminHistory {
@@ -7833,12 +8000,14 @@ table#adminHistory td.number {
 }
 
 div#adminFlickr {
-  width: 582px;
+  width: 100%;
+  max-width: 582px;
 }
 
 div#adminTwitter,
 div#adminTwitter div.tweet_cell {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
 }
 
 div#adminTwitter div.tweet_avatar {
@@ -7846,7 +8015,8 @@ div#adminTwitter div.tweet_avatar {
 }
 
 div#adminTwitter div.tweet_copy {
-  width: 265px;
+  width: 100%;
+  max-width: 265px;
 }
 
 #flickr_badge_source_txt {
@@ -7953,7 +8123,8 @@ div.grippie {
 }
 /* FAQ STYLES */
 .Wrap {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
 }
 
 .Wrap h2 {
@@ -7978,7 +8149,8 @@ h3.Question {
 .chart {
   float: left;
   position: relative;
-  width: 898px;
+  width: 100%;
+  max-width: 898px;
   height: 140px;
   padding: 0 0 20px 20px;
   margin-top: 0;
@@ -8059,7 +8231,8 @@ div.merge div.input {
 
 div.merge div.record {
   float: left;
-  width: 710px;
+  width: 100%;
+  max-width: 710px;
 }
 
 div.merge div.record ul {
@@ -8091,7 +8264,8 @@ div.merge div.record .name a:active {
 
 div.merge div.record label {
   display: block;
-  width: 710px;
+  width: 100%;
+  max-width: 710px;
 }
 
 div.merge div.record .metaDate {
@@ -8139,13 +8313,15 @@ body#plain .siteSearch {
 
 body#plain #contentBody,
 body#plain #contentHead {
-  width: 690px;
+  width: 100%;
+  max-width: 690px;
   padding: 0 134px;
   margin: 0;
 }
 
 body#plain div.contentOnethird {
-  width: 210px;
+  width: 100%;
+  max-width: 210px;
 }
 
 body#plain div.contentSpacer {
@@ -8330,7 +8506,8 @@ body#plain #borrowTable {
 }
 
 body#plain #borrowTable table {
-  width: 690px;
+  width: 100%;
+  max-width: 690px;
   margin-bottom: 20px;
 }
 
@@ -8430,11 +8607,13 @@ form#borrowbook fieldset {
 }
 
 form#borrowbook fieldset.download {
-  width: 455px;
+  width: 100%;
+  max-width: 455px;
 }
 
 form#borrowbook fieldset.online {
-  width: 220px;
+  width: 100%;
+  max-width: 220px;
   margin-right: 15px;
 }
 
@@ -8473,7 +8652,8 @@ form#borrowbook legend {
 form#borrowbook label {
   display: block;
   float: left;
-  width: 170px;
+  width: 100%;
+  max-width: 170px;
   height: 50px;
   padding: 20px 0 0 50px;
   margin-bottom: 25px;
@@ -8533,7 +8713,8 @@ p#borrowList {
   position: absolute;
   top: 0;
   left: 100%;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   font-size: .75em;
 }
 
@@ -8782,7 +8963,8 @@ ul.listLists li .image img {
 }
 
 ul.listLists li .data {
-  width: 208px;
+  width: 100%;
+  max-width: 208px;
   padding: 3px 0px;
 }
 
@@ -8800,20 +8982,23 @@ ul.listLists li .owner {
 }
 
 div#listsWork ul.listLists li {
-  width: 209px;
+  width: 100%;
+  max-width: 209px;
   padding-right: 19px;
   padding-top: 0;
   min-height: 35px;
 }
 
 div#listsWork ul.listLists li .data {
-  width: 167px;
+  width: 100%;
+  max-width: 167px;
 }
 
 div#listsWork h3 {
   font-size: 100%;
   min-height: 32px;
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   font-family: "Lucida Grande",Verdana,Geneva,Helvetica,Arial,sans-serif!important;
   font-weight: normal;
   outline: 0;
@@ -8854,7 +9039,8 @@ div#listsWork p#listsLess {
 
 div#listsWork div.dropit {
   position: relative;
-  width: 215px;
+  width: 100%;
+  max-width: 215px;
   min-height: 45px;
 }
 
@@ -8901,7 +9087,8 @@ div#listsWork div.dropper {
   position: absolute;
   top: 0;
   left: 32px;
-  width: 161px;
+  width: 100%;
+  max-width: 161px;
   z-index: 1001;
 }
 
@@ -8966,7 +9153,8 @@ div#subjectLists ul.listLists li {
   list-style-type: none;
   display: block;
   float: left;
-  width: 282px;
+  width: 100%;
+  max-width: 282px;
   font-family: "Lucida Grande", Verdana, Arial, sans-serif;
   padding-bottom: 10px;
   padding-top: 0;
@@ -8990,7 +9178,8 @@ div#subjectLists ul.listLists li .image img {
 div#subjectLists ul.listLists li .data {
   display: block;
   float: left;
-  width: 248px;
+  width: 100%;
+  max-width: 248px;
 }
 
 div#subjectLists div.dropit h3 {
@@ -9009,7 +9198,8 @@ div#subjectLists p {
 div#subjectLists div.dropit {
   float: left;
   position: relative;
-  width: 282px;
+  width: 100%;
+  max-width: 282px;
   min-height: 50px;
 }
 
@@ -9042,7 +9232,8 @@ div#subjectLists div.dropper {
   position: absolute;
   top: 0;
   left: 32px;
-  width: 230px;
+  width: 100%;
+  max-width: 230px;
   z-index: 1001;
 }
 
@@ -9157,7 +9348,8 @@ div.dropper div.dropdown p.create a {
 #listsDisplay ul#listResults li {
   display: block;
   float: left;
-  width: 270px;
+  width: 100%;
+  max-width: 270px;
   padding-right: 40px;
   margin-bottom: 10px;
 }
@@ -9180,7 +9372,8 @@ div.dropper div.dropdown p.create a {
 #listsDisplay ul#listResults span.details {
   display: block;
   float: left;
-  width: 236px;
+  width: 100%;
+  max-width: 236px;
 }
 
 #listsDisplay ul#listResults h3 {
@@ -9199,17 +9392,20 @@ div.dropper div.dropdown p.create a {
 }
 
 ul.wide li span.resultTitle {
-  width: 813px;
+  width: 100%;
+  max-width: 813px;
   max-width: 813px;
 }
 
 ul.narrow li span.resultTitle {
-  width: 525px;
+  width: 100%;
+  max-width: 525px;
   max-width: 525px;
 }
 
 ul.clean li span.resultTitle {
-  width: 236px;
+  width: 100%;
+  max-width: 236px;
   max-width: 236px;
 }
 
@@ -9241,7 +9437,8 @@ body#user #description p {
 }
 
 #lists .listEntry {
-  width: 280px;
+  width: 100%;
+  max-width: 280px;
   margin: 0 30px 35px 0;
   float: left;
 }
@@ -9257,7 +9454,8 @@ body#user #description p {
 }
 
 #lists .listEntry .data {
-  width: 245px;
+  width: 100%;
+  max-width: 245px;
   float: left;
   font-family: "Lucida Grande", Verdana, Helvetica, Geneva, sans-serif;
 }
@@ -9608,7 +9806,8 @@ span.actions a span.checked-out {
 }
 
 div.tools-override {
-  width: 180px;
+  width: 100%;
+  max-width: 180px;
   min-height: 45px;
   padding-left: 0px;
   margin: 0px auto;
@@ -9616,7 +9815,8 @@ div.tools-override {
 }
 
 div.tools-override .Tools .btn-notice {
-  width: 180px;
+  width: 100%;
+  max-width: 180px;
   margin-left: 45px;
   font-size: .9em;
 }
@@ -9634,13 +9834,15 @@ div.tools-override .Tools .btn-notice {
   top: 35px;
   left: 10px;
   padding: 5px 10px;
-  width: 209px;
+  width: 100%;
+  max-width: 209px;
 }
 
 .Tools #widget-add.old-style-lists div.edition-page-lists-dropdown {
   margin: 0px;
   left: 0px;
-  width: 157px;
+  width: 100%;
+  max-width: 157px;
   top: 0px;
   padding: 0px 10px;
 }
@@ -9678,7 +9880,8 @@ div.tools-override .Tools .btn-notice {
 
 div.tools-override div.dropper {
   z-index: 10000;
-  width: 180px;
+  width: 100%;
+  max-width: 180px;
   top: unset;
   left: -1px;
 }
@@ -10073,7 +10276,8 @@ a.btn {
 
 #ratingsForm .stars {
   background: url("/static/images/stars.png") repeat-x 0 0;
-  width: 150px;
+  width: 100%;
+  max-width: 150px;
   margin: 0px auto;
   margin-bottom: 7px;
   cursor: pointer;
