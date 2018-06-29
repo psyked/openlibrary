@@ -2312,17 +2312,6 @@ ul.serp {
 
 /* LAYOUT */
 
-#test-body-mobile {
-  box-sizing: border-box;
-  max-width: 960px;
-  width: 100%;
-  margin: 0px auto;
-  margin-top: 20px;
-  background-color: @white;
-  border-radius: 5px;
-  border: 1px solid @dark-beige;
-}
-
 div#placement {
   max-width: 960px;
   margin: 0 auto;
@@ -2350,6 +2339,8 @@ div#content {
 
 @media only screen and (max-width: 960px) {
   div#content {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     margin: 0 5px;
   }
 }
